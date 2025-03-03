@@ -1,2 +1,2 @@
 # windpower
-How wind power works
+Welcome to your own guided tour on wind energy.
