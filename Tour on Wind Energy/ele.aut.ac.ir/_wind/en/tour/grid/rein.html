@@ -1,0 +1,237 @@
+<HTML>  
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/grid/rein.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:00 GMT -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>Wind Turbines and Power Quality Issues</TITLE>
+  <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+<META NAME="Description" CONTENT="Wind turbine manufacturers have to take electrical power quality into consideration. This page explains how.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+,
+grid reinforcement, flicker, k values, power quality, islanding, weak grids, windenergy, windturbines, wind mills">
+  <!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#0066CC" VLINK="#333333" BACKGROUND="../../res/bg.gif">
+
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD COLSPAN="3" VALIGN="TOP">
+      <H2><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="offshore.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="season.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="RIGHT"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" 
+      USEMAP="#ictour2" ISMAP> <MAP NAME="wt">
+    <AREA SHAPE="rect" COORDS="0,0,236,40" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/wt.gif" WIDTH="236" HEIGHT="40" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" ALT="www.windpower.org" BORDER="0" USEMAP="#wt"
+      ISMAP></H2>
+    </TD>
+  </TR>
+  <TR>
+    <TD WIDTH="120" VALIGN="TOP"><IMG SRC="../../r/t.gif" WIDTH="120"
+      HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG="0"></TD> 
+    <TD VALIGN="TOP" WIDTH="20"><IMG SRC="../../r/t.gif" WIDTH="20"
+      HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG="0"></TD> 
+    <TD WIDTH="370" VALIGN="TOP">
+      <H2><FONT FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbines and Power Quality Issues</FONT></H2>
+
+      <P><IMG SRC="../../r/t.gif" WIDTH="370" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><BR>
+      The buyer of a wind turbine does not need to concern himself
+      with local technical regulations for wind turbines and other
+      equipment connected to the electrical grid. This responsibility
+      is generally left to the turbine manufacturer and the local power
+      company.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">For the people who are technically minded,
+      we go into some of the electrotechnical issues involved in connecting
+      a turbine to the grid on this page.</P>
+
+      <P><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Power
+      Quality</FONT></B><BR>
+<BR>
+      <IMG SRC="../../r/sine.gif" WIDTH="370" HEIGHT="200" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" HSPACE="0" BORDER="0" ALT="Alternating current sinusoidal curve"></P>
+
+      <P>The term &quot;power quality&quot; refers to the voltage stability,
+      frequency stability, and the absence of various forms of electrical
+      noise (e.g. flicker or harmonic distortion) on the electrical
+      grid. More broadly speaking, power companies (and their customers)
+      prefer an alternating current with a nice sinusoidal shape, such
+      as the one in the image above. (If you are not familiar with
+      the basics of alternating current (AC) it may be useful to consult
+      the <A HREF="http://ele.aut.ac.ir/~wind/en/stat/unitsac.htm">Reference Manual</A> about
+      this subject before continuing).</P>
+
+      <P><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Starting
+      (and Stopping) a Turbine</FONT></B><BR>
+      Most electronic wind turbine controllers are programmed to let
+      the turbine run idle without grid connection at low wind speeds.
+      (If it were grid connected at low wind speeds, it would in fact
+      run as a motor, as you can read about on the <A HREF="../wtrb/electric.html">generator
+      page</A>). Once the wind becomes powerful enough to turn the
+      rotor and generator at their rated speed, it is important that
+      the turbine generator becomes connected to the electrical grid
+      at the right moment.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">Otherwise there will be only the mechanical
+      resistance in the gearbox and generator to prevent the rotor
+      from accelerating, and eventually overspeeding. (There are several
+      safety devices, including fail-safe brakes, in case the correct
+      start procedure fails, which you may have read in the section
+      on <A HREF="../wtrb/safety.html">Wind Turbine Safety</A>).</P>
+
+      <P><A NAME="thy"></A><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Soft
+      Starting with Thyristors</FONT></B><BR>
+      If you switched a large wind turbine on to the grid with a normal
+      switch, the neighbours would see a brownout (because of the current
+      required to magnetise the generator) followed by a power peak
+      due to the generator current surging into the grid. You may see
+      the situation in the drawing in the accompanying browser window,
+      where you see the flickering of the lamp when you operate the
+      switch to start the wind turbine. The same effect can possibly
+      be seen when you switch on your computer, and the transformer
+      in its power supply all of a sudden becomes magnetised.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">Another unpleasant side effect of using a
+      &quot;hard&quot; switch would be to put a lot of extra wear on
+      the gearbox, since the cut-in of the generator would work as
+      if you all of a sudden slammed on the mechanical brake of the
+      turbine.
+    </TD>
+  </TR> 
+  <TR>
+    <TD VALIGN="TOP">
+      <P>&nbsp;</P>
+
+      <P><FONT COLOR="#ffffff" SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">Large
+      power thyristors in wind turbines get very hot when they are
+      activated. They have to be equipped with aluminium heat sinks
+      and fans as you see in the picture to the right.<BR>
+      Photograph<BR>
+      &copy; 1998 Soren Krohn</FONT>
+    </TD> 
+    <TD>&nbsp;</TD> 
+    <TD VALIGN="TOP">
+      <P><IMG SRC="../../res/thyrisk.jpg" WIDTH="256" HEIGHT="192"
+      ALIGN="LEFT" NATURALSIZEFLAG="3" BORDER="0" ALT="Thyristors"><IMG 
+      SRC="../../r/t.gif" WIDTH="8" HEIGHT="200" ALIGN="LEFT" NATURALSIZEFLAG="0">To
+      prevent this situation, modern wind turbines are <B>soft starting</B>,
+      i.e. they connect and disconnect gradually to the grid using
+      <B>thyristors</B>, a type of semiconductor continuous switches
+      which may be controlled electronically. (You may in fact have
+      a thyristor in your own home, if you own a modern light dimmer,
+      where you can adjust the voltage on your lamps continuously).<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">Thyristors waste about 1 to 2 per cent of
+      the energy running through them. Modern wind turbines are therefore
+      normally equipped with a so called <B>bypass switch</B>, i.e.
+      a mechanical switch which is activated after the turbine has
+      been soft started. In this way the amount of energy wasted will
+      be minimised.</P>
+
+      <P><A NAME="weak"></A><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Weak
+      Grids, Grid Reinforcement</FONT></B><BR>
+      If a turbine is connected to a weak electrical grid, (i.e. it
+      is vary far away in a remote corner of the electrical grid with
+      a low power-carrying ability), there may be some brownout / power
+      surge problems of the sort mentioned above. In such cases it
+      may be necessary to reinforce the grid, in order to carry the
+      fluctuating current from the wind turbine.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">Your local power company has experience in
+      dealing with these potential problems, because they are the exact
+      mirror-image of connecting a large electricity user, (e.g. a
+      factory with large electrical motors) to the grid.</P>
+
+      <P><A NAME="flicker"></A><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Flicker<BR>
+      </FONT>Flicker</B> is an engineering expression for short lived
+      voltage variations in the electrical grid which may cause light
+      bulbs to flicker. This phenomenon may be relevant if a wind turbine
+      is connected to a weak grid, since short-lived wind variations
+      will cause variations in power output. There are various ways
+      of dealing with this issue in the design of the turbine, mechanically,
+      electrically, and using power electronics.</P>
+
+      <P><A NAME="islanding"></A><B><FONT COLOR="#0066cc" SIZE="+1"
+       FACE="gillsans, frutiger, arial, helvetica, geneva">Preventing
+      &quot;Islanding&quot;<BR>
+      </FONT>Islanding</B> is a situation which may occur if a section
+      of the electrical grid becomes disconnected from the main electrical
+      grid, e.g. because of accidental or intended tripping of a large
+      circuit breaker in the grid (e.g. due to lightning strikes or
+      short circuits in the grid). If wind turbines keep on running
+      in the isolated part of the grid, then it is very likely that
+      the two separate grids will not be <A HREF="http://ele.aut.ac.ir/~wind/en/stat/unitsac.htm#phase">in
+      phase</A> after a short while.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">Once the connection to the main grid is re-established
+      it may cause huge current surges in the grid and the wind turbine
+      generator. It would also cause a large release of energy in the
+      mechanical drive train (i.e. the shafts, the gear box and the
+      rotor of the wind turbine) much like &quot;hard switching&quot;
+      the turbine generator onto the grid would do.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">The electronic controller of the wind turbine
+      will therefore constantly have to monitor the voltage and frequency
+      of the alternating current in the grid. In case the voltage or
+      frequency of the local grid drift outside certain limits within
+      a fraction of a second, the turbine will automatically disconnect
+      from the grid, and stop itself immediately afterwards. (Normally
+      by activating the aerodynamic brakes as explained in the section
+      on wind <A HREF="../wtrb/safety.html">turbine safety</A>).
+    </TD>
+  </TR> 
+  <TR>
+    <TD VALIGN="BOTTOM"><MAP NAME="ihome">
+    <AREA SHAPE="rect" COORDS="0,0,120,20" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/ihome.gif" WIDTH="120" HEIGHT="20" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Home" USEMAP="#ihome" ISMAP></TD> 
+    <TD>&nbsp;</TD> 
+    <TD VALIGN="TOP">
+      <P ALIGN=CENTER>&nbsp;</P>
+
+      <P ALIGN=CENTER><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="offshore.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="season.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" 
+      USEMAP="#ictour2" ISMAP></P>
+
+      <P ALIGN=CENTER><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">|
+      <A HREF="season.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A>
+      | <A HREF="offshore.html">Forward</A> | <BR>
+      <A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 2000 Soren Krohn.
+      All rights reserved.</A><BR>
+      Updated 9 September 2000<BR>
+      http://www.windpower.org/tour/grid/rein.htm</FONT>
+    </TD>
+  </TR> 
+</TABLE></P>
+
+<P><IMG SRC="../../res/dkgrid.gif" WIDTH="1" HEIGHT="1" ALIGN="TOP"
+NATURALSIZEFLAG="0" BORDER="0" HSPACE="0"> <!--NOEDIT--><SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+gHouse = window.open("house/house.html","House","status=yes","width=550","height=400");
+// -->
+</SCRIPT>
+<!--/NOEDIT--><!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/grid/rein.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:02 GMT -->
+</HTML>

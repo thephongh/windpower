@@ -1,0 +1,411 @@
+<HTML>  
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wres/roseplot.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:41:27 GMT -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>Wind Rose Plotter Programme</TITLE>
+  <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+<META NAME="Description" CONTENT="Plot your own wind rose using this programme.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+wind rose plotter programme, windenergy, windturbines, wind mills">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var NS4 = (document.layers) ? 1 : 0;
+var IE4 = (document.all) ? 1 : 0;
+// -->
+</SCRIPT>
+ <!--/NOEDIT-->
+</HEAD>
+<BODY LINK="#0066cc" VLINK="#333333" BACKGROUND="../../res/bg.gif"
+onLoad="init()">
+
+<FORM onReset="set()">
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD COLSPAN="7">
+      <H2><MAP NAME="ictour2Map34">
+    <AREA SHAPE="rect" COORDS="140,-1,159,18" HREF="shear.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="rose.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="RIGHT"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" 
+      USEMAP="#ictour2Map34" ISMAP> <MAP NAME="wtMap35">
+    <AREA SHAPE="rect" COORDS="0,0,236,40" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/wt.gif" WIDTH="236" HEIGHT="40" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" ALT="www.windpower.org" BORDER="0" USEMAP="#wtMap35"
+      ISMAP></H2>
+    </TD>
+  </TR>
+  <TR>
+    <TD WIDTH="60" VALIGN="BOTTOM">
+      <P><CENTER><IMG SRC="../../r/t.gif" WIDTH="60" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><BR>
+      Wind<BR>
+      frequency</CENTER></TD> 
+    <TD WIDTH="60" VALIGN="BOTTOM">
+      <P><CENTER><IMG SRC="../../r/t.gif" WIDTH="60" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><BR>
+      Mean<BR>
+      wind<BR>
+      speed</CENTER></TD> 
+    <TD WIDTH="20" VALIGN="TOP"><IMG SRC="../../r/t.gif" WIDTH="20"
+      HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG="0"></TD> 
+    <TD WIDTH="321" COLSPAN="3" VALIGN="TOP">
+      <H2><IMG SRC="../../r/t.gif" WIDTH="321" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><BR>
+      <FONT FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Rose Plotter Programme</FONT></H2>
+
+      <P><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Plot
+      your own wind rose</FONT></B>
+    </TD>
+    <TD WIDTH="49" ROWSPAN="4" VALIGN="TOP" BGCOLOR="#0066cc" ALIGN="CENTER"><IMG 
+      SRC="../../r/t.gif" WIDTH="49" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG="0"><BR>
+      <IMG SRC="../../res/calc.gif" WIDTH="37" HEIGHT="245" ALIGN="BOTTOM"
+      BORDER="0" NATURALSIZEFLAG="2" ALT="Calculator"></TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="60" ROWSPAN="2" VALIGN="TOP" ALIGN="CENTER"><INPUT
+      NAME="f0" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="6.7" onChange="sector[0].freqWedge.change()"><BR>
+      <INPUT NAME="f1" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="5.0"
+      onChange="sector[1].freqWedge.change()"><BR>
+      <INPUT NAME="f2" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="8.5"
+      onChange="sector[2].freqWedge.change()"><BR>
+      <INPUT NAME="f3" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="7.5"
+      onChange="sector[3].freqWedge.change()"><BR>
+      <INPUT NAME="f4" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="7.7"
+      onChange="sector[4].freqWedge.change()"><BR>
+      <INPUT NAME="f5" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="7.7"
+      onChange="sector[5].freqWedge.change()"><BR>
+      <INPUT NAME="f6" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="7.9"
+      onChange="sector[6].freqWedge.change()"><BR>
+      <INPUT NAME="f7" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="9.2"
+      onChange="sector[7].freqWedge.change()"><BR>
+      <INPUT NAME="f8" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="14.5"
+      onChange="sector[8].freqWedge.change()"><BR>
+      <INPUT NAME="f9" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="14.5"
+      onChange="sector[9].freqWedge.change()"><BR>
+      <INPUT NAME="f10" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="6.7"
+      onChange="sector[10].freqWedge.change()"><BR>
+      <INPUT NAME="f11" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="4.1"
+      onChange="sector[11].freqWedge.change()"><BR>
+      <INPUT NAME="f12" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[12].freqWedge.change()"><BR>
+      <INPUT NAME="f13" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[13].freqWedge.change()"><BR>
+      <INPUT NAME="f14" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[14].freqWedge.change()"><BR>
+      <INPUT NAME="f15" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[15].freqWedge.change()"></TD> 
+    <TD WIDTH="60" ROWSPAN="2" VALIGN="TOP" ALIGN="CENTER"><INPUT
+      NAME="v0" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="5.85" onChange="sector[0].speedWedge.change()"><BR>
+      <INPUT NAME="v1" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="5.67"
+      onChange="sector[1].speedWedge.change()"><BR>
+      <INPUT NAME="v2" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="6.75"
+      onChange="sector[2].speedWedge.change()"><BR>
+      <INPUT NAME="v3" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="7.19"
+      onChange="sector[3].speedWedge.change()"><BR>
+      <INPUT NAME="v4" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="6.84"
+      onChange="sector[4].speedWedge.change()"><BR>
+      <INPUT NAME="v5" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="5.93"
+      onChange="sector[5].speedWedge.change()"><BR>
+      <INPUT NAME="v6" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="5.76"
+      onChange="sector[6].speedWedge.change()"><BR>
+      <INPUT NAME="v7" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="5.85"
+      onChange="sector[7].speedWedge.change()"><BR>
+      <INPUT NAME="v8" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="7.35"
+      onChange="sector[8].speedWedge.change()"><BR>
+      <INPUT NAME="v9" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="6.47"
+      onChange="sector[9].speedWedge.change()"><BR>
+      <INPUT NAME="v10" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="6.38"
+      onChange="sector[10].speedWedge.change()"><BR>
+      <INPUT NAME="v11" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="5.76"
+      onChange="sector[11].speedWedge.change()"><BR>
+      <INPUT NAME="v12" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[12].speedWedge.change()"><BR>
+      <INPUT NAME="v13" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[13].speedWedge.change()"><BR>
+      <INPUT NAME="v14" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[14].speedWedge.change()"><BR>
+      <INPUT NAME="v15" TYPE="text" SIZE="5" MAXLENGTH="5" VALUE="0"
+      onChange="sector[15].speedWedge.change()"></TD> 
+    <TD WIDTH="20" HEIGHT="56" VALIGN="TOP">&nbsp;</TD> 
+    <TD WIDTH="321" COLSPAN="3" VALIGN="TOP">
+      <P>&nbsp;</P>
+
+      <P><FONT COLOR="#ff0000" SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><NOSCRIPT>This
+      calculator requires a Netscape 4 or IE 4 or later browser to
+      work. If you are using Navigator 4 or later or Internet Explorer
+      4 or later, and you see this message, you need to enable JavaScript.
+      In Netscape, choose Options | Network Preferences, choose the
+      Languages tab, and click Enable JavaScript. Then click reload
+      on your browser. In Internet Explorer, choose Edit | Preferences
+      | Java, and enable Java, select the Microsoft virtual machine,
+      and enable the &quot;Just in time compiler&quot;. Then click
+      reload on your browser. </NOSCRIPT>Do not operate the form until
+      this page and its programme have loaded completely. <BR>
+      </FONT><IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">The
+      explanation of the wind rose may be found on the <A HREF="rose.html">previous
+      page</A>. The Wind Frequency is the percentage of the time the
+      wind is coming from a particular direction. The first row in
+      the table to the left corresponds to North (the top wedge). The
+      subsequent rows correspond to the sectors of the wind rose in
+      a clockwise direction.<BR>
+      Use&nbsp;<SELECT NAME="nosectors" onChange="init()">
+      <OPTION VALUE="8">8
+      <OPTION VALUE="12" SELECTED>12
+      <OPTION VALUE="16">16
+      </SELECT>&nbsp;Sectors. <!--NOEDIT--><INPUT TYPE="button" NAME="plot" VALUE="Plot"
+      CHECKED onClick="display()"><!--/NOEDIT-->&nbsp;Fill wedges.
+      <INPUT NAME="name" TYPE="reset" VALUE="Reset">&nbsp;to&nbsp;Copenhagen&nbsp;data.<BR>
+      <!--NOEDIT--><INPUT TYPE="checkbox" NAME="freq" VALUE="checkbox" CHECKED
+      onClick="display()"><!--/NOEDIT-->&nbsp;Show&nbsp;wind&nbsp;frequency.
+<BR>
+      <!--NOEDIT--><INPUT
+      TYPE="checkbox" NAME="speed" VALUE="checkbox" CHECKED onClick="display()"><!--/NOEDIT-->&nbsp;Show&nbsp;wind&nbsp;speed.
+<BR>
+      <!--NOEDIT--><INPUT TYPE="checkbox" NAME="energy" VALUE="checkbox" CHECKED
+      onClick="display()"><!--/NOEDIT-->&nbsp;Show&nbsp;wind&nbsp;energy.</FONT>
+    </TD>
+  </TR>
+  <TR>
+     
+    <TD WIDTH="20" VALIGN="TOP">&nbsp;</TD>
+    <TD WIDTH="101" VALIGN="TOP">
+      <P>&nbsp;</P>
+
+      <P><IMG SRC="../../r/t.gif" WIDTH="101" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><BR>
+      <IMG SRC="../../res/wedges/f123.gif" WIDTH="30" HEIGHT="15" 
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="2"><BR>
+      For each of the sectors the outermost (blue) wedges show the
+      wind frequency distribution.</FONT>
+    </TD>
+    <TD WIDTH="110" VALIGN="TOP">
+      <P>&nbsp;</P>
+
+      <P><IMG SRC="../../r/t.gif" WIDTH="110" HEIGHT="6" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><BR>
+      <IMG SRC="../../res/wedges/v123.gif" WIDTH="30" HEIGHT="10" 
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="2"><BR>
+      </FONT><IMG SRC="../../r/t.gif" WIDTH="5" HEIGHT="100" ALIGN="LEFT"
+      NATURALSIZEFLAG="0"><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">The
+      middle (black) wedges show the distribution of the product of
+      the two columns, i.e. the wind speeds times their frequency.</FONT>
+    </TD>
+    <TD WIDTH="110" VALIGN="TOP">
+      <P>&nbsp;</P>
+
+      <P><IMG SRC="../../r/t.gif" WIDTH="110" HEIGHT="11" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><BR>
+      <IMG SRC="../../res/wedges/e123.gif" WIDTH="30" HEIGHT="5" ALIGN="BOTTOM"
+      BORDER="0" NATURALSIZEFLAG="2"><BR>
+      </FONT><IMG SRC="../../r/t.gif" WIDTH="5" HEIGHT="100" ALIGN="LEFT"
+      NATURALSIZEFLAG="0"><IMG SRC="../../r/t.gif" WIDTH="5" HEIGHT="100"
+      ALIGN="RIGHT" NATURALSIZEFLAG="0"><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">The
+      innermost (red) wedges show the distribution of the wind speeds
+      cubed (i.e. the energies) multiplied by their frequencies.</FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD COLSPAN="2" VALIGN="BOTTOM"><MAP NAME="ihomeMap36">
+    <AREA SHAPE="rect" COORDS="0,0,120,20" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/ihome.gif" WIDTH="120" HEIGHT="20" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Home" USEMAP="#ihomeMap36"
+      ISMAP></TD>
+     
+    <TD WIDTH="20" VALIGN="TOP">&nbsp;</TD> 
+    <TD COLSPAN="3" VALIGN="TOP">
+      <P><CENTER>&nbsp;</CENTER></P>
+
+      <P><CENTER><MAP NAME="ictour2Map37">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="shear.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="rose.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="TOP"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" 
+      USEMAP="#ictour2Map37" ISMAP></CENTER></P>
+
+      <P><CENTER><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">|
+      <A HREF="rose.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A>
+      | <A HREF="shear.html">Forward</A> | <BR>
+      <A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 1999 Soren Krohn.
+      All rights reserved.</A><BR>
+      Updated 9 September 2000<BR>
+      http://www.windpower.org/tour/wres/roseplot.htm</FONT></CENTER>
+    </TD>
+  </TR>
+</TABLE></P>
+
+<!--NOEDIT-->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function init(){alert("This programme requires Netscape 4 or Internet Explorer 4 to work.");}
+function display(){init()}
+function set(){init()}
+function sector(){init()}
+//-->
+</SCRIPT>
+<!--/NOEDIT--><SPAN ID="test" STYLE="position: absolute;"></SPAN>
+
+<P><!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+// Copyright 1999 Soren Krohn
+var style = ((NS4 && document.test) || IE4) ? 1 : 0;
+reset=false;
+win=null;
+// code use 0=top half, 1=right half, 2 bottom half, 3 left half
+// 4=top right quadrant, 5=bottom right quadrant, 6=bottom left quadrant, 7=top left quadrant
+ f8=new Array(new gif("f80",142,185,0),new gif("f81",171,171,4),new gif("f82",185,142,1),new gif("f83",171,171,5),new gif("f84",142,185,2),new gif("f85",171,171,6),new gif("f86",185,142,3),new gif("f87",171,171,7));
+ f12=new Array(new gif("f120",98,185,0),new gif("f121",133,181,4),new gif("f122",181,133,4),new gif("f123",185,98,1),new gif("f124",181,133,5),new gif("f125",133,181,5),new gif("f126",98,185,2),new gif("f127",133,181,6),new gif("f128",181,133,6),new gif("f129",185,98,3),new gif("f1210",181,133,7),new gif("f1211",133,181,7));
+ f16=new Array(new gif("f160",72,185,0),new gif("f161",104,181,4),new gif("f162",154,154,4),new gif("f163",181,104,4),new gif("f164",185,72,1),new gif("f165",181,104,5),new gif("f166",154,154,5),new gif("f167",104,181,5),new gif("f168",72,185,2),new gif("f169",104,181,6),new gif("f1610",154,154,6),new gif("f1611",181,104,6),new gif("f1612",185,72,3),new gif("f1613",181,104,7),new gif("f1614",154,154,7),new gif("f1615",104,181,7));
+ fgifs=new Array(f8,f12,f16);
+ v8=new Array(new gif("v80",98,185,0),new gif("v81",163,163,4),new gif("v82",185,98,1),new gif("v83",163,163,5),new gif("v84",98,185,2),new gif("v85",163,163,6),new gif("v86",185,98,3),new gif("v87",163,163,7));
+ v12=new Array(new gif("v120",66,185,0),new gif("v121",120,175,4),new gif("v122",175,120,4),new gif("v123",185,66,1),new gif("v124",175,120,5),new gif("v125",120,175,5),new gif("v126",66,185,2),new gif("v127",120,175,6),new gif("v128",175,120,6),new gif("v129",185,66,3),new gif("v1210",175,120,7),new gif("v1211",120,175,7));
+ v16=new Array(new gif("v160",50,185,0),new gif("v161",94,181,4),new gif("v162",149,149,4),new gif("v163",181,94,4),new gif("v164",185,50,1),new gif("v165",181,94,5),new gif("v166",149,149,5),new gif("v167",94,181,5),new gif("v168",50,185,2),new gif("v169",94,181,6),new gif("v1610",149,149,6),new gif("v1611",181,94,6),new gif("v1612",185,50,3),new gif("v1613",181,94,7),new gif("v1614",149,149,7),new gif("v1615",94,181,7));
+ vgifs=new Array(v8,v12,v16);
+ e8=new Array(new gif("e80",50,185,0),new gif("e81",149,149,4),new gif("e82",185,50,1),new gif("e83",149,149,5),new gif("e84",50,185,2),new gif("e85",149,149,6),new gif("e86",185,50,3),new gif("e87",149,149,7));
+ e12=new Array(new gif("e120",34,185,0),new gif("e121",108,170,4),new gif("e122",170,108,4),new gif("e123",185,34,1),new gif("e124",170,108,5),new gif("e125",108,170,5),new gif("e126",34,185,2),new gif("e127",108,170,6),new gif("e128",170,108,6),new gif("e129",185,34,3),new gif("e1210",170,108,7),new gif("e1211",108,170,7));
+ e16=new Array(new gif("e160",26,185,0),new gif("e161",84,177,4),new gif("e162",141,141,4),new gif("e163",177,84,4),new gif("e164",185,26,1),new gif("e165",177,84,5),new gif("e166",141,141,5),new gif("e167",84,177,5),new gif("e168",26,185,2),new gif("e169",84,177,6),new gif("e1610",141,141,6),new gif("e1611",177,84,6),new gif("e1612",185,26,3),new gif("e1613",177,84,7),new gif("e1614",141,141,7),new gif("e1615",84,177,7));
+ egifs=new Array(e8,e12,e16);
+ gifs= new Array(fgifs,vgifs,egifs);
+ init();
+function init(){
+ reset=false;
+ nosectors=parseInt(document.forms[0].elements.nosectors.options[document.forms[0].elements.nosectors.selectedIndex].value);
+ sector=new Array(0);
+ for (var i=0;i<16;i++){ sector[i]=new sect(i,nosectors); }
+}
+function set(){
+ reset=true;
+}
+function gif(name,w,h,code){
+ this.name=name;
+ this.w=w;
+ this.h=h;
+ this.code=code;
+ this.top=top;
+ this.left=left;
+}
+function top(scale){
+ if (this.code==1 || this.code==3) return(190-0.5*Math.round(scale*this.h));
+ if (this.code==0 || this.code==4 || this.code==7) return(190-Math.round(scale*this.h));
+ return(190);
+}
+function left(scale){
+ if (this.code==0 || this.code==2) return(190-0.5*Math.round(scale*this.w));
+ if (this.code==3 || this.code==6 || this.code==7) return(190-Math.round(scale*this.w));
+ return(190);
+}
+function sect(no,nosectors){
+ this.freqWedge=new wedge(0,"f",no,nosectors,1,0,102,204);
+ this.speedWedge=new wedge(1,"v",no,nosectors,2/3,0,0,0);
+ this.energyWedge=new wedge(2,"e",no,nosectors,1/3,255,0,0);
+}
+function wedge(type,name,no,nosectors,width,r,g,b){
+ this.type=type;
+ this.name=name;
+ this.no=no;
+ this.width=width; // width of wedge
+ this.r=r; // red
+ this.g=g; // green
+ this.b=b; // blue
+ this.gif=gifs[type][nosectors/4-2][no];
+ this.change=change; //method
+ this.max=max; // method
+ this.draw=draw; // method
+ if (this.name=="f"){
+  this.value=parseFloat(document.forms[0].elements[this.name+this.no].value);
+ }else{
+  if (this.name=="v"){
+   this.value=parseFloat(document.forms[0].elements["v"+this.no].value)*parseFloat(document.forms[0].elements["f"+this.no].value);
+  }else{
+   var v=parseFloat(document.forms[0].elements["v"+this.no].value);
+   var f=parseFloat(document.forms[0].elements["f"+this.no].value);
+   this.value=v*v*v*f;
+  }
+ }
+}
+function max(){
+ var x=0;
+ maximum=-999999999;
+ for (var i=0;i<nosectors;i++){
+ if (this.name=="v"){
+ x=sector[i].speedWedge.value;
+ }else{
+ if (this.name=="f"){
+ x=sector[i].freqWedge.value;
+ }else{
+ x=sector[i].energyWedge.value;
+ }
+ }
+ if (x>maximum) maximum=x;
+ }
+ return(maximum);
+}
+function change(){
+ this.value=parseFloat(document.forms[0].elements[this.name+this.no].value);
+ var f=parseFloat(document.forms[0].elements["f"+this.no].value);
+ var v=parseFloat(document.forms[0].elements["v"+this.no].value);
+ sector[this.no].speedWedge.value=v*f;
+ sector[this.no].energyWedge.value=v*v*v*f;
+}
+function draw(){
+ if (!style)return;
+ var r=1;
+ var m=this.max();
+ if (m>0) r=this.value/m;
+ if (r==0) return; // Netscape displays images with size=0 at full size
+ var w=Math.round(this.gif.w*r);
+ var h=Math.round(this.gif.h*r);
+ var id=this.name+this.no;
+ if (NS4) win.document.write("<LAYER>");
+ win.document.write("<DIV STYLE='position: absolute; left: "+this.gif.left(r)+"; top: "+this.gif.top(r)+";'>");
+ win.document.write("<IMG SRC='../../res/wedges/"+this.gif.name+".gif' WIDTH='"+w+"' HEIGHT='"+h+"'></DIV>");
+ if (NS4) win.document.write("</LAYER>");
+}
+function display(){
+ if (reset) init();
+ var w=screen.availWidth-415;
+ (win==null) ? win=open("","skxy_99","resizable=no,width=400,height=400,screenX="+w) : win.document.clear();
+ win.document.write("<HEAD><TITLE>Wind Rose Plot</TITLE></HEAD><BODY BGCOLOR='#FFFFFF'>");
+ for (var i=0;i<nosectors;i++){
+ if (document.forms[0].freq.checked==true) sector[i].freqWedge.draw();
+ if (document.forms[0].speed.checked==true) sector[i].speedWedge.draw();
+ if (document.forms[0].energy.checked==true) sector[i].energyWedge.draw();
+ }
+if (NS4) win.document.write("<LAYER>");
+ win.document.write("<DIV STYLE='position: absolute; left: 5; top: 5;'><IMG SRC='../../res/wedges/circles.gif' WIDTH='371' HEIGHT='371' ALIGN='BOTTOM' BORDER='0' NATURALSIZEFLAG='3'></DIV>");
+ if (NS4) win.document.write("</LAYER><LAYER>");
+ win.document.write("<DIV STYLE='position: absolute; left: 5; top: 380;'>");
+ win.document.write("<FONT SIZE='1' FACE='gillsans, frutiger, arial, helvetica, geneva' COLOR='#0066CC'>Wind Rose Plotter Programme Copyright &copy; 1999 S&oslash;ren Krohn</FONT></DIV>");
+ if (NS4) win.document.write("</LAYER>");
+ win.document.close();
+ win.focus();
+ win=null;
+}
+//-->
+</SCRIPT>
+<!--/NOEDIT--><IMG SRC="../../r/shear.gif" WIDTH="1" HEIGHT="1"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><IMG SRC="../../res/akaroa1.jpg"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"
+HSPACE="0"><IMG SRC="../../res/akaroa2.jpg" WIDTH="1" HEIGHT="1"
+ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" HSPACE="0">
+</FORM>
+
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wres/roseplot.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:41:30 GMT -->
+</HTML>

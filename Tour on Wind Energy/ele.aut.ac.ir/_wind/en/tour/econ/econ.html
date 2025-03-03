@@ -1,0 +1,270 @@
+<HTML>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/econ/econ.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:19 GMT -->
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Mac">
+ <TITLE>Wind Energy Economics Calculator</TITLE>
+ <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+
+<META NAME="Description" CONTENT="This calculator computes the return on investment in wind turbines.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+economics, revenues, prices, finances, income, output, calculator,
+net present value, cost of electricity, rate of return, windenergy, windturbines, wind mills">
+<!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK='#0066CC' VLINK='#333333'>
+
+<FORM>
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD COLSPAN="4" VALIGN="BOTTOM"><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="offshore.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+ <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="guide.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" HSPACE="0" 
+ALIGN="RIGHT" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd"
+USEMAP="#ictour2" ISMAP> <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm"><IMG SRC="../../r/www.gif"
+WIDTH="221" HEIGHT="23" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" ALT=
+"www.windpower.org"></A></TD></TR>
+<TR>
+<TD WIDTH="420" COLSPAN="2"><H2><BR>
+<FONT FACE='gillsans, frutiger, arial, helvetica, geneva'>Wind Energy Economics
+Calculator</FONT></H2>
+
+<P><FONT COLOR="#FF0000" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=-1><NOSCRIPT>
+This very handy calculator requires a Netscape 3.0 or later browser to work,
+but you may read the example in any case. If you are using Navigator 3.0
+or later and you see this message, you need to enable JavaScript. Choose
+Options | Network Preferences, choose the Languages tab, and click Enable
+JavaScript. Then click reload on your browser. </NOSCRIPT>Do not operate
+the form until this page and its programme have loaded completely. <B>Note</B>:
+Prices and costs are examples only. They may not reflect current market
+conditions or local site or installation conditions.<BR>
+</FONT><IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"> <FONT SIZE=-1 FACE='gillsans, frutiger, arial, helvetica, geneva'>You
+may experiment by changing the figures in the example below. You can fill
+in any box, except the result boxes marked with an asterisk (*). After changing
+data, use the tab key, click the Calculate button, or click anywhere on
+the page outside the field you have updated to see the results. Click on
+the question marks for help.</FONT></TD>
+<TD VALIGN="TOP" WIDTH="20"><IMG SRC="../../r/t.gif" WIDTH="20" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG=
+"0"></TD>
+<TD WIDTH="70" ROWSPAN="15" VALIGN="TOP" ALIGN="CENTER" BGCOLOR="#0066cc"><IMG SRC="../../r/t.gif" WIDTH="70" HEIGHT="10" ALIGN="BOTTOM" NATURALSIZEFLAG=
+"0"><BR>
+<IMG SRC="../../res/calc.gif" WIDTH="47" ALIGN="BOTTOM" NATURALSIZEFLAG=
+"3" HEIGHT="312" BORDER="0" ALT="Calculator"></TD>
+</TR>
+<TR>
+<TD WIDTH="350" VALIGN="TOP"><IMG SRC="../../r/t.gif" WIDTH="350" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"><BR>
+<FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Investment</B></FONT>
+with <INPUT NAME="yrs" TYPE="text" SIZE="6" VALUE="20" onChange="Cyrs()">
+years expected lifetime</TD>
+<TD WIDTH="70" ALIGN="RIGHT"><P ALIGN=CENTER><IMG SRC="../../r/t.gif" WIDTH="70" HEIGHT="1" ALIGN=
+"MIDDLE" NATURALSIZEFLAG="0"><BR>
+<INPUT NAME="curr" TYPE="text" SIZE="7" VALUE="USD" onChange="Ccurr()"></TD>
+<TD ALIGN="CENTER"><MAP NAME="kort">
+ <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#anchor953774">
+</MAP><IMG SRC="../../res/kort.gif" WIDTH="18" HEIGHT="27" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0" USEMAP="#kort" ISMAP ALT="?"></TD></TR>
+<TR>
+<TD ALIGN="RIGHT"><SELECT NAME="kW" onChange="CkW()">
+<OPTION SELECTED>600 kW example
+<OPTION>225 kW example
+<OPTION>1.5 MW offshore
+<OPTION>Clear All Data
+<OPTION>Other
+</SELECT> wind turbine price</TD>
+<TD ALIGN="RIGHT"><INPUT NAME="turb" TYPE="text" SIZE="11" VALUE="450000" onChange="Cturb()"></TD>
+<TD ALIGN="CENTER"><A HREF="guide.html#anchor954050"><IMG SRC="../../res/kort.gif" WIDTH="18"
+HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?"></A></TD></TR>
+<TR>
+<TD ALIGN="RIGHT"><SELECT NAME="pct" onChange="Cpct()">
+<OPTION VALUE="20">20 %
+<OPTION VALUE="25">25 %
+<OPTION VALUE="30" SELECTED>30 %
+<OPTION VALUE="35">35 %
+<OPTION VALUE="40">40 %
+<OPTION VALUE="other">Other
+</SELECT> installation costs</TD>
+<TD ALIGN="RIGHT" VALIGN="BOTTOM">+<INPUT NAME="inst" TYPE="text" SIZE="11" VALUE="135000" onChange="Cinst()"><BR>
+<HR ALIGN=RIGHT SIZE="1" NOSHADE></TD>
+<TD ALIGN="CENTER"><A HREF="guide.html#anchor980763"><IMG SRC="../../res/kort.gif" WIDTH="18"
+HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?"></A></TD></TR>
+<TR>
+<TD ALIGN="RIGHT" VALIGN="BOTTOM">Total investment *<BR>
+<HR ALIGN=RIGHT NOSHADE></TD>
+<TD ALIGN="RIGHT" VALIGN="BOTTOM"><INPUT NAME="tot" TYPE="text" SIZE="11" VALUE="585000" onChange="Ctot()"><BR>
+<HR ALIGN=RIGHT NOSHADE></TD>
+<TD ALIGN="CENTER"></TD></TR>
+<TR>
+<TD><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Current
+Income and Expenditure per Year</B></FONT></TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="CENTER">&nbsp;</TD></TR>
+<TR>
+<TD ALIGN="RIGHT">Income <INPUT NAME="kWh" TYPE="text" SIZE="12" VALUE="1500000" onChange="CkWh()"
+onMouseOver="self.status='Specify expected annual energy output in kilowatt hours from turbine';return true">
+kWh @ <INPUT NAME="tarif" TYPE="text" SIZE="7" VALUE="0.05" onChange="Ctarif()">
+per kWh =</TD>
+<TD ALIGN="RIGHT"><INPUT NAME="income" TYPE="text" SIZE="11" onChange="Cincome()" VALUE="75000"></TD>
+<TD ALIGN="CENTER"><A HREF="guide.html#anchor1001825"><IMG SRC="../../res/kort.gif" WIDTH="18"
+HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?"></A></TD></TR>
+<TR>
+<TD VALIGN="BOTTOM"><INPUT TYPE="radio" VALUE="pct" NAME="use" onClick="Cuse()" CHECKED="true">Use
+<INPUT NAME="mpct" TYPE="text" SIZE="6" VALUE="1.5" onChange="Cmpct()">
+% of turbine price for operation &amp; maintenance<BR>
+<INPUT TYPE="radio" VALUE="hrs" NAME="use" onClick="Cuse()">Use <INPUT 
+NAME="hrs" TYPE="text" SIZE="7" onChange="Chrs()"> per kWh (in present day
+prices)<BR>
+<INPUT TYPE="radio" VALUE="amt" NAME="use" onClick="Cuse()">Specify total
+cost (in present day prices) to the right</TD>
+<TD ALIGN="RIGHT" VALIGN="BOTTOM">-<INPUT NAME="om" TYPE="text" SIZE="11" VALUE="6750" onChange="Com()"><BR>
+<HR ALIGN=RIGHT SIZE="1" NOSHADE></TD>
+<TD ALIGN="CENTER"><A HREF="guide.html#anchor1007968"><IMG SRC="../../res/kort.gif" WIDTH="18"
+HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?"></A></TD></TR>
+<TR>
+<TD ALIGN="RIGHT" VALIGN="BOTTOM">Total Net Income per Year *<BR>
+<HR ALIGN=RIGHT NOSHADE></TD>
+<TD ALIGN="RIGHT" VALIGN="BOTTOM"><INPUT NAME="net" TYPE="text" SIZE="11" VALUE="68250" onChange="Cnet()"><BR>
+<HR ALIGN=RIGHT NOSHADE></TD>
+<TD ALIGN="CENTER"></TD></TR>
+<TR>
+<TD><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Net
+Present Value</B></FONT> @ <INPUT NAME="i" TYPE="text" SIZE="6" VALUE="5"
+onChange="Ci()"> % p.a. <B>real</B> interest rate *</TD>
+<TD ALIGN="RIGHT"><INPUT NAME="npv" TYPE="text" SIZE="11" onChange="Cnpv()"></TD>
+<TD ALIGN="CENTER"><A HREF="guide.html#anchor1181300"><IMG SRC="../../res/kort.gif" WIDTH="18"
+HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?"></A></TD></TR>
+<TR>
+<TD><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Real
+Rate of Return ***</B></FONT> <INPUT NAME="rrrcom" TYPE="text" SIZE="21"
+VALUE="per cent per annum" onChange="Crrrcom()"> *</TD>
+<TD ALIGN="RIGHT"><INPUT NAME="rrr" TYPE="text" SIZE="11" onChange="Crrr()"></TD>
+<TD ALIGN="CENTER"><A HREF="guide.html#anchor1216920"><IMG SRC="../../res/kort.gif" WIDTH="18"
+HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?"></A></TD></TR>
+<TR>
+<TD><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Electricity
+Cost per kWh**</B></FONT> Present value per kWh *</TD>
+<TD ALIGN="RIGHT"><INPUT NAME="elec" TYPE="text" SIZE="11" onChange="Celec()"></TD>
+<TD ALIGN="CENTER"><A HREF="guide.html#anchor1269463"><IMG SRC="../../res/kort.gif" WIDTH="18"
+HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?"></A></TD></TR>
+<TR>
+<TD COLSPAN="2" VALIGN="TOP"><INPUT NAME="comment" TYPE="text" SIZE="46" onChange="Ccomment()"><BR>
+<INPUT NAME="name" TYPE="button" VALUE="Calculate" onClick="Crun()"> <INPUT
+NAME="name" TYPE="button" VALUE="Default Data" onClick="Creset()"> <INPUT NAME="name" TYPE="button" VALUE="Clear Data" onClick="Clr()"><BR>
+<HR ALIGN=LEFT NOSHADE></TD>
+<TD WIDTH="7%" ALIGN="CENTER"></TD></TR>
+<TR>
+<TD COLSPAN="2" VALIGN="TOP"><P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Payments,
+(Used for Net Present Value and Real Rate of Return) **</B></FONT><BR>
+<FONT SIZE=-2>00<INPUT NAME="a0" TYPE="text" SIZE="11" onChange="Crun()"
+VALUE="-585000"> Investment (expenditure, therefore always a minus sign)<BR>
+01<INPUT NAME="a1" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 02<INPUT
+NAME="a2" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 03<INPUT 
+NAME="a3" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 04<INPUT 
+NAME="a4" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 05<INPUT 
+NAME="a5" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"><BR>
+06<INPUT NAME="a6" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 07<INPUT
+NAME="a7" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 08<INPUT 
+NAME="a8" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 09<INPUT 
+NAME="a9" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"> 10<INPUT 
+NAME="a10" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"><BR>
+11<INPUT NAME="a11" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+12<INPUT NAME="a12" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+13<INPUT NAME="a13" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+14<INPUT NAME="a14" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+15<INPUT NAME="a15" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"><BR>
+16<INPUT NAME="a16" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+17<INPUT NAME="a17" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+18<INPUT NAME="a18" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+19<INPUT NAME="a19" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250">
+20<INPUT NAME="a20" TYPE="text" SIZE="8" onChange="Cr()" VALUE="68250"><BR>
+21<INPUT NAME="a21" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 22<INPUT
+NAME="a22" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 23<INPUT NAME=
+"a23" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 24<INPUT NAME="a24"
+TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 25<INPUT NAME="a25" TYPE=
+"text" SIZE="8" onChange="Cr()" VALUE="0"><BR>
+26<INPUT NAME="a26" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 27<INPUT
+NAME="a27" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 28<INPUT NAME=
+"a28" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 29<INPUT NAME="a29"
+TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 30<INPUT NAME="a30" TYPE=
+"text" SIZE="8" onChange="Cr()" VALUE="0"><BR>
+31<INPUT NAME="a31" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 32<INPUT
+NAME="a32" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 33<INPUT NAME=
+"a33" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 34<INPUT NAME="a34"
+TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 35<INPUT NAME="a35" TYPE=
+"text" SIZE="8" onChange="Cr()" VALUE="0"><BR>
+36<INPUT NAME="a36" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 37<INPUT
+NAME="a37" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 38<INPUT NAME=
+"a38" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 39<INPUT NAME="a39"
+TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 40<INPUT NAME="a40" TYPE=
+"text" SIZE="8" onChange="Cr()" VALUE="0"><BR>
+41<INPUT NAME="a41" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 42<INPUT
+NAME="a42" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 43<INPUT NAME=
+"a43" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 44<INPUT NAME="a44"
+TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 45<INPUT NAME="a45" TYPE=
+"text" SIZE="8" onChange="Cr()" VALUE="0"><BR>
+46<INPUT NAME="a46" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 47<INPUT
+NAME="a47" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 48<INPUT NAME=
+"a48" TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 49<INPUT NAME="a49"
+TYPE="text" SIZE="8" onChange="Cr()" VALUE="0"> 50<INPUT NAME="a50" TYPE=
+"text" SIZE="8" onChange="Cr()" VALUE="0"></FONT></P>
+
+<P><FONT SIZE=-1>* = Boxes marked with an asterisk cannot be changed directly
+by the user.<BR>
+** = These boxes is filled out by the programme, but you may change the
+amounts if you wish. The calculation of electricity cost per kWh uses the
+same payments as above, but the programme subtracts the electricity sales
+income from all non zero payment values in the table, year 01 to year 50.
+If you want to be sure what you are doing when computing the electricity
+cost per kWh, you should set the income from electricity sales to zero.<BR>
+*** = To compute the real rate of return you must have entered both expenditures
+and income from electricity sales.</FONT></TD>
+<TD ALIGN="CENTER" VALIGN="TOP"><P ALIGN=LEFT><A HREF="guide.html#anchor642084"><IMG SRC="../../res/kort.gif"
+WIDTH="18" HEIGHT="27" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT=
+"?"></A></TD></TR>
+<TR>
+<TD COLSPAN="2" VALIGN="TOP"><P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="offshore.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+ <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="guide.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" USEMAP="#ictour2"
+ISMAP></P>
+
+<P ALIGN=CENTER><FONT FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=-1>|
+<A HREF="guide.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A> | <A HREF=
+"offshore.html">Forward</A> | <BR>
+<A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 1998 Soren Krohn. All rights reserved.</A><BR>
+Updated 6 August 2000<BR>
+http://www.windpower.org/tour/econ/econ.htm</FONT></TD>
+<TD>&nbsp;</TD></TR>
+</TABLE>
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="../../js/econ.js">
+<!--
+	alert("Could not load programme. This programme requires a Netscape 3 or 4 browser, or and IE 4 browser.");
+//-->
+</SCRIPT>
+<!--/NOEDIT--></P>
+
+<P><IMG SRC="../../r/cstbylif.gif" WIDTH="1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG=
+"0" ALT="Cost by Lifetime" HSPACE="0"></FORM>
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/econ/econ.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:19 GMT -->
+</HTML>

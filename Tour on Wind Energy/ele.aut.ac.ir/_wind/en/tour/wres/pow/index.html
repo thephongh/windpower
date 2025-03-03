@@ -1,0 +1,375 @@
+<HTML>  
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wres/pow/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:41:59 GMT -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>Wind Turbine Power Calculator</TITLE>
+  <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+
+<META NAME="Description" CONTENT="This calculator computes the annual energy output from a wind turbine. It can also draw a number of interesting graphs.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+output, calculator,
+power curves, power coefficients, power density curves, windenergy, windturbines, wind mills">
+  <!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK='#0066CC' VLINK='#333333'>
+
+<FORM>
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD COLSPAN="10" VALIGN="BOTTOM"><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="../annu.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="../guidep.html">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20"
+      HSPACE="0" ALIGN="RIGHT" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd"
+      USEMAP="#ictour2" ISMAP> <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm"><IMG SRC="../../../r/www.gif"
+      WIDTH="221" HEIGHT="23" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"
+      ALT="www.windpower.org"></A></TD>
+     
+  </TR>
+  <TR>
+    <TD WIDTH="420" COLSPAN="8">
+      <H2><BR>
+      <FONT FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine Power Calculator</FONT></H2>
+
+      <P><FONT COLOR="#ff0000" SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><NOSCRIPT>This
+      calculator requires a Netscape 3.01 or IE 4 or later browser
+      to work. If you are using Navigator 3.01 or later or Internet
+      Explorer 4 or later, and you see this message, you need to enable
+      JavaScript. In Netscape, choose Options | Network Preferences,
+      choose the Languages tab, and click Enable JavaScript. Then click
+      reload on your browser. In Internet Explorer, choose Edit | Preferences
+      | Java, and enable Java, select the Microsoft virtual machine,
+      and enable the &quot;Just in time compiler&quot;. Then click
+      reload on your browser. </NOSCRIPT>Do not operate the form until
+      this page and its programme have loaded completely. If you are
+      too fast, the programme will complain about missing data, and
+      you'll have to click reload. <B>Note1:</B> Energy output results
+      from calculation programmes like this may differ slightly from
+      the </FONT><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><A
+      HREF="../guidep.html#anchor1866417">results given by manufacturers</A></FONT><FONT
+       COLOR="#ff0000" SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">.
+      <B>Note 2</B>: Power curves are found by field measurements which
+      may be uncertain. Therefore these results should be interpreted
+      with great care, as the may be some +/-10 per cent uncertainty
+      in these measurements. <B>Note 3</B>: Turbine manufacturers may
+      have site specific turbine models available which are not listed
+      here. <B>Note 4</B>: The site data below was not chosen as being
+      particularly suitable for wind turbines, but was taken directly
+      from the anemometer locations used in the European Wind Atlas.
+      In the case of e.g. Frankfurt (D), one may e.g. find locations
+      on neighbouring </FONT><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><A
+      HREF="../hill.html">hills</A></FONT><FONT COLOR="#ff0000" SIZE="-1"
+       FACE="gillsans, frutiger, arial, helvetica, geneva"> to the
+      South with twice as high an annual production as you would get
+      at the airport where the anemometer is located. In the case of
+      e.g. Northwestern Ireland, sites on rounded hills in the area
+      may yield 20-25 per cent higher energy output.<BR>
+      </FONT><IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"> <FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">You
+      may experiment by changing the figures in the example below.
+      You can fill in any box, except the result boxes marked with
+      an asterisk (*). After changing data, use the tab key, click
+      the Calculate button, or click anywhere on the page outside the
+      field you have updated to see the results. Click on the question
+      marks for help. (If a plot windows disappears, it is probably
+      hidden behind this window).</FONT>
+    </TD>
+    <TD VALIGN="TOP" WIDTH="20"><IMG SRC="../../../r/t.gif" WIDTH="20"
+      HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0"></TD> 
+    <TD WIDTH="70" ROWSPAN="10" VALIGN="TOP" ALIGN="CENTER" BGCOLOR="#0066cc"><IMG 
+      SRC="../../../r/t.gif" WIDTH="70" HEIGHT="10" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0"><BR>
+      <IMG SRC="../../../res/calc.gif" WIDTH="47" ALIGN="BOTTOM" NATURALSIZEFLAG="3"
+      HEIGHT="312" BORDER="0" ALT="Calculator"></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="8" VALIGN="TOP"><BR>
+      <B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Site
+      Data</FONT></B> <SELECT NAME="site" onChange="CheckSite()">
+      <OPTION SELECTED>Select Site Data
+      <OPTION>Other
+      </SELECT></TD>
+     
+    <TD ALIGN="CENTER"><MAP NAME="ss">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="../guidep.html#site">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" USEMAP="#ss" ISMAP
+      ALT="?"></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="8" VALIGN="TOP"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Air
+      Density Data<BR>
+      </FONT></B><FONT SIZE="-1"><INPUT NAME="temperature" TYPE="text"
+      SIZE="6" VALUE="15.0" onChange="CheckT()">&deg;C temp at<INPUT
+      NAME="altitude" TYPE="text" SIZE="6" VALUE="0" onChange="CheckAlt()">m
+      altitude (=<INPUT NAME="pressure" TYPE="text" SIZE="6" VALUE="101.33"
+      onChange="CheckPressure()">kPa pressure)<INPUT NAME="density"
+      TYPE="text" SIZE="6" VALUE="1.225" onChange="CheckDensity()">kg/m<SUP>3</SUP>
+      density</FONT></TD>
+     
+    <TD ALIGN="CENTER"><MAP NAME="dd">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="../guidep.html#density">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#dd"
+      ISMAP></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="8" VALIGN="TOP"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Distribution Data for Site<BR>
+      </FONT></B><FONT SIZE="-1"><INPUT NAME="shape" TYPE="text" SIZE="6"
+      VALUE="2.0" onChange="CheckShape()">Weibull shape parameter<BR>
+      <INPUT NAME="mean" TYPE="text" SIZE="6" VALUE="7.0" onChange="CheckMean()">m/s
+      mean =<INPUT NAME="scale" TYPE="text" SIZE="6" VALUE="7.9" onChange="CheckScale()">Weibull
+      scale parameter<BR>
+      <INPUT NAME="mHeight" TYPE="text" SIZE="6" VALUE="50.0" onChange="CheckmHeight()">m
+      height, Roughness length <INPUT NAME="rough" TYPE="text" SIZE="6"
+      VALUE="0.055" onChange="CheckRough()">m = class<SELECT NAME="cls"
+      onChange="CheckClass()">
+      <OPTION VALUE="0.0002">0
+      <OPTION VALUE="0.03">1
+      <OPTION VALUE="0.055" SELECTED>1.5
+      <OPTION VALUE="0.1">2
+      <OPTION VALUE="0.4">3
+      <OPTION VALUE="1.6">4
+      <OPTION>other
+      </SELECT></FONT><BR>
+      <HR ALIGN=LEFT NOSHADE></TD>
+    <TD ALIGN="CENTER"><MAP NAME="xx">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="../guidep.html#anchor1010667">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#xx"
+      ISMAP></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="8"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine Data</FONT></B> <FONT SIZE="-1"><SELECT NAME="turb" 
+      onChange="CheckTurbine()">
+      <OPTION VALUE="0" SELECTED>Select Turbine
+      <OPTION VALUE="0">Specify Manually
+      <OPTION VALUE="1">
+      <OPTION VALUE="2">
+      <OPTION VALUE="3">
+      <OPTION VALUE="4">
+      </SELECT><INPUT NAME="kWrated" TYPE="text" SIZE="5" onChange="CheckkW()"
+      VALUE="600"> kW<BR>
+      <INPUT NAME="cutin" TYPE="text" SIZE="6" VALUE="5.0" onChange="CheckCutin()">m/s
+      cut in wind speed,<INPUT NAME="cutout" TYPE="text" SIZE="6" 
+      VALUE="25.0" onChange="CheckCutout()">m/s cut out wind speed<BR>
+      <INPUT NAME="diam" TYPE="text" SIZE="6" VALUE="43.0" onChange="CheckDiam()">m
+      rotor diameter,<INPUT NAME="hubHeight" TYPE="text" SIZE="6" 
+      VALUE="50.0" onChange="CheckTowerHeight()">m hub height <SELECT
+      NAME="stdHeight" onChange="CheckStdHeight()">
+      <OPTION VALUE="-1" SELECTED>Std Heights
+      <OPTION VALUE="-1">
+      <OPTION VALUE="-1">
+      <OPTION VALUE="-1">
+      <OPTION VALUE="-1">
+      <OPTION VALUE="-1">
+      </SELECT><BR>
+      <INPUT NAME="comment" TYPE="text" SIZE="53" onChange="Sorry()"></FONT><BR>
+      <HR ALIGN=LEFT NOSHADE></TD>
+    <TD ALIGN="CENTER"><MAP NAME="qq">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="../guidep.html#anchor1013062">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#qq"
+      ISMAP></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="8" VALIGN="TOP" ALIGN="CENTER"><INPUT NAME="name" TYPE="button" VALUE="Calculate" onClick="plot()">
+      <INPUT NAME="reset" TYPE="reset" VALUE="Reset Data"> <INPUT NAME="submit" TYPE="button" VALUE="Power Density" onClick="plot();Powden()">
+      <INPUT NAME="pCurve" TYPE="button" VALUE="Power Curve" onClick="Powcu()">
+      <INPUT NAME="pCurve" TYPE="button" VALUE="Power Coefficient" onClick="Powco()">
+<BR>
+      <HR NOSHADE></TD>
+    <TD ALIGN="CENTER"><MAP NAME="ii">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="../guidep.html#anchor1015184">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#ii"
+      ISMAP></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="4" VALIGN="TOP"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Site
+      Power Input Results<BR>
+      </FONT></B><FONT SIZE="-1">Power input*<INPUT NAME="totp" TYPE="text"
+      SIZE="5" onChange="Sorry()"> W/m2 rotor area<BR>
+      Max. power input at*<INPUT NAME="maxp" TYPE="text" SIZE="5" 
+      onChange="Sorry()"> m/s<BR>
+      Mean hub ht wind speed* <INPUT NAME="hhms" TYPE="text" SIZE="5"
+      onChange="Sorry()"> m/s</FONT></TD>
+     
+    <TD COLSPAN="4" VALIGN="TOP"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Turbine
+      Power output Results<BR>
+      </FONT></B><FONT SIZE="-1">Power output* <INPUT NAME="turbp"
+      TYPE="text" SIZE="6" onChange="Sorry()"> W/m2 rotor area<BR>
+      Energy output* <INPUT NAME="turbe" TYPE="text" SIZE="6" onChange="Sorry()">
+      kWh/m2/year<BR>
+      Energy output* <INPUT NAME="turby" TYPE="text" SIZE="8" onChange="Sorry()">
+      kWh/year<BR>
+      Capacity factor* <INPUT NAME="capfactor" TYPE="text" SIZE="5"
+      onChange="Sorry()"> per cent</FONT></TD>
+     
+    <TD ALIGN="CENTER"><MAP NAME="aa">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="../guidep.html#anchor1020872">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#aa"
+      ISMAP></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="8" VALIGN="TOP" ALIGN="CENTER"><HR NOSHADE><BR>
+      <B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine Power Curve</FONT></B></TD>
+     
+    <TD ALIGN="CENTER"></TD>
+  </TR>
+  <TR>
+    <TD VALIGN="TOP" WIDTH="69" ALIGN="RIGHT">m/s...<BR>
+      <INPUT NAME="ms1" TYPE="text" SIZE="6" VALUE="1" onChange="Ms(1)"><BR>
+      <INPUT NAME="ms2" TYPE="text" SIZE="6" VALUE="2" onChange="Ms(2)"><BR>
+      <INPUT NAME="ms3" TYPE="text" SIZE="6" VALUE="3" onChange="Ms(3)"><BR>
+      <INPUT NAME="ms4" TYPE="text" SIZE="6" VALUE="4" onChange="Ms(4)"><BR>
+      <INPUT NAME="ms5" TYPE="text" SIZE="6" VALUE="5" onChange="Ms(5)"><BR>
+      <INPUT NAME="ms6" TYPE="text" SIZE="6" VALUE="6" onChange="Ms(6)"><BR>
+      <INPUT NAME="ms7" TYPE="text" SIZE="6" VALUE="7" onChange="Ms(7)"><BR>
+      <INPUT NAME="ms8" TYPE="text" SIZE="6" VALUE="8" onChange="Ms(8)"><BR>
+      <INPUT NAME="ms9" TYPE="text" SIZE="6" VALUE="9" onChange="Ms(9)"><BR>
+      <INPUT NAME="ms10" TYPE="text" SIZE="6" VALUE="10" onChange="Ms(10)"></TD> 
+    <TD VALIGN="TOP" WIDTH="69">...kW<BR>
+      <INPUT NAME="kW1" TYPE="text" SIZE="6" onChange="CheckP(1)" 
+      VALUE="0"><BR>
+      <INPUT NAME="kW2" TYPE="text" SIZE="6" VALUE="0" onChange="CheckP(2)"><BR>
+      <INPUT NAME="kW3" TYPE="text" SIZE="6" VALUE="2" onChange="CheckP(3)"><BR>
+      <INPUT NAME="kW4" TYPE="text" SIZE="6" VALUE="17" onChange="CheckP(4)"><BR>
+      <INPUT NAME="kW5" TYPE="text" SIZE="6" VALUE="45" onChange="CheckP(5)"><BR>
+      <INPUT NAME="kW6" TYPE="text" SIZE="6" VALUE="72" onChange="CheckP(6)"><BR>
+      <INPUT NAME="kW7" TYPE="text" SIZE="6" VALUE="124" onChange="CheckP(7)"><BR>
+      <INPUT NAME="kW8" TYPE="text" SIZE="6" VALUE="196" onChange="CheckP(8)"><BR>
+      <INPUT NAME="kW9" TYPE="text" SIZE="6" VALUE="277" onChange="CheckP(9)"><BR>
+      <INPUT NAME="kW10" TYPE="text" SIZE="6" VALUE="364" onChange="CheckP(10)"></TD> 
+    <TD WIDTH="3" BGCOLOR="#0066cc">&nbsp;</TD> 
+    <TD VALIGN="TOP" WIDTH="69" ALIGN="RIGHT">m/s...<BR>
+      <INPUT NAME="ms11" TYPE="text" SIZE="6" VALUE="11" onChange="Ms(11)"><BR>
+      <INPUT NAME="ms12" TYPE="text" SIZE="6" VALUE="12" onChange="Ms(12)"><BR>
+      <INPUT NAME="ms13" TYPE="text" SIZE="6" VALUE="13" onChange="Ms(13)"><BR>
+      <INPUT NAME="ms14" TYPE="text" SIZE="6" VALUE="14" onChange="Ms(14)"><BR>
+      <INPUT NAME="ms15" TYPE="text" SIZE="6" VALUE="15" onChange="Ms(15)"><BR>
+      <INPUT NAME="ms16" TYPE="text" SIZE="6" VALUE="16" onChange="Ms(16)"><BR>
+      <INPUT NAME="ms17" TYPE="text" SIZE="6" VALUE="17" onChange="Ms(17)"><BR>
+      <INPUT NAME="ms18" TYPE="text" SIZE="6" VALUE="18" onChange="Ms(18)"><BR>
+      <INPUT NAME="ms19" TYPE="text" SIZE="6" VALUE="19" onChange="Ms(19)"><BR>
+      <INPUT NAME="ms20" TYPE="text" SIZE="6" VALUE="20" onChange="Ms(20)"></TD> 
+    <TD VALIGN="TOP" WIDTH="69">...kW<BR>
+      <INPUT NAME="kW11" TYPE="text" SIZE="6" onChange="CheckP(11)"
+      VALUE="444"><BR>
+      <INPUT NAME="kW12" TYPE="text" SIZE="6" VALUE="533" onChange="CheckP(12)"><BR>
+      <INPUT NAME="kW13" TYPE="text" SIZE="6" VALUE="584" onChange="CheckP(13)"><BR>
+      <INPUT NAME="kW14" TYPE="text" SIZE="6" VALUE="618" onChange="CheckP(14)"><BR>
+      <INPUT NAME="kW15" TYPE="text" SIZE="6" VALUE="619" onChange="CheckP(15)"><BR>
+      <INPUT NAME="kW16" TYPE="text" SIZE="6" VALUE="618" onChange="CheckP(16)"><BR>
+      <INPUT NAME="kW17" TYPE="text" SIZE="6" VALUE="619" onChange="CheckP(17)"><BR>
+      <INPUT NAME="kW18" TYPE="text" SIZE="6" VALUE="620" onChange="CheckP(18)"><BR>
+      <INPUT NAME="kW19" TYPE="text" SIZE="6" VALUE="610" onChange="CheckP(19)"><BR>
+      <INPUT NAME="kW20" TYPE="text" SIZE="6" VALUE="594" onChange="CheckP(20)"></TD> 
+    <TD WIDTH="3" BGCOLOR="#0066cc">&nbsp;</TD> 
+    <TD VALIGN="TOP" WIDTH="69" ALIGN="RIGHT">m/s...<BR>
+      <INPUT NAME="ms21" TYPE="text" SIZE="6" VALUE="21" onChange="Ms(21)"><BR>
+      <INPUT NAME="ms22" TYPE="text" SIZE="6" VALUE="22" onChange="Ms(22)"><BR>
+      <INPUT NAME="ms23" TYPE="text" SIZE="6" VALUE="23" onChange="Ms(23)"><BR>
+      <INPUT NAME="ms24" TYPE="text" SIZE="6" VALUE="24" onChange="Ms(24)"><BR>
+      <INPUT NAME="ms25" TYPE="text" SIZE="6" VALUE="25" onChange="Ms(25)"><BR>
+      <INPUT NAME="ms26" TYPE="text" SIZE="6" VALUE="26" onChange="Ms(26)"><BR>
+      <INPUT NAME="ms27" TYPE="text" SIZE="6" VALUE="27" onChange="Ms(27)"><BR>
+      <INPUT NAME="ms28" TYPE="text" SIZE="6" VALUE="28" onChange="Ms(28)"><BR>
+      <INPUT NAME="ms29" TYPE="text" SIZE="6" VALUE="29" onChange="Ms(29)"><BR>
+      <INPUT NAME="ms30" TYPE="text" SIZE="6" VALUE="30" onChange="Ms(30)"></TD> 
+    <TD VALIGN="TOP" WIDTH="69">...kW<BR>
+      <INPUT NAME="kW21" TYPE="text" SIZE="6" VALUE="592" onChange="CheckP(21)"><BR>
+      <INPUT NAME="kW22" TYPE="text" SIZE="6" VALUE="590" onChange="CheckP(22)"><BR>
+      <INPUT NAME="kW23" TYPE="text" SIZE="6" VALUE="580" onChange="CheckP(23)"><BR>
+      <INPUT NAME="kW24" TYPE="text" SIZE="6" VALUE="575" onChange="CheckP(24)"><BR>
+      <INPUT NAME="kW25" TYPE="text" SIZE="6" VALUE="570" onChange="CheckP(25)"><BR>
+      <INPUT NAME="kW26" TYPE="text" SIZE="6" VALUE="0" onChange="CheckP(26)"><BR>
+      <INPUT NAME="kW27" TYPE="text" SIZE="6" VALUE="0" onChange="CheckP(27)"><BR>
+      <INPUT NAME="kW28" TYPE="text" SIZE="6" VALUE="0" onChange="CheckP(28)"><BR>
+      <INPUT NAME="kW29" TYPE="text" SIZE="6" VALUE="0" onChange="CheckP(29)"><BR>
+      <INPUT NAME="kW30" TYPE="text" SIZE="6" VALUE="0" onChange="CheckP(30)"></TD> 
+    <TD ALIGN="CENTER" VALIGN="TOP"><MAP NAME="jj">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="../guidep.html#anchor1016981">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#jj"
+      ISMAP></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="8" VALIGN="TOP">
+      <P><INPUT NAME="remark" TYPE="text" SIZE="45" onChange="Sorry()"><BR>
+      Note: This calculator may be used together with the <!--SELECTION--><A
+      HREF="javascript:Econ()">Wind Energy Economics Calculator<!--/SELECTION--></A>.
+      If you open the economics calculator from this page, they will
+      both be on screen, and this calculator will automatically feed
+      its energy output result into the economics calculator.</P>
+
+      <P><CENTER><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="../annu.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="../guidep.html">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd"
+      USEMAP="#ictour2" ISMAP></CENTER></P>
+
+      <P><CENTER><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">|
+      <A HREF="../guidep.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A>
+      | <A HREF="../annu.html">Forward</A> | <BR>
+      <A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 2000 Soren Krohn.
+      All rights reserved.</A><BR>
+      Updated 6 August 2000<BR>
+      http://www.windpower.org/tour/wres/pow/index.htm</FONT></CENTER>
+    </TD>
+    <TD>&nbsp;</TD> 
+  </TR>
+</TABLE><!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="../../../js/pow.js">
+<!--
+	alert("Could not load programme. This programme requires a Netscape 3 browser.");
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="../../../js/gamma.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+gEcon=null;
+function Econ() {
+	gEcon = window.open("../../econ/econ.html","Power_Coefficient","status=yes,width=545,height=440,scrollbars=yes,resizable=yes");
+}
+//-->
+</SCRIPT>
+<!--/NOEDIT--></P>
+
+<P><IMG SRC="../../../res/bluepix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0"> <IMG SRC="../../../res/blpix.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0">
+<IMG SRC="../../../res/redpix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0"> <IMG SRC="../../../res/grpix.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0">
+<IMG SRC="../../../r/t.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0"> <IMG SRC="../../../r/gwhyr.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><IMG 
+SRC="../../../r/cstbylif.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" ALT="Cost by Lifetime" HSPACE="0">
+</FORM>
+
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wres/pow/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:42:01 GMT -->
+</HTML>

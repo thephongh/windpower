@@ -1,0 +1,373 @@
+<HTML>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/shadow/guide.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:14 GMT -->
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Mac">
+ <TITLE>Guide to the Wind Turbine Shadow Calculator</TITLE>
+ <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+
+<META NAME="Description" CONTENT="This page explains how the shadow calculator on this web site works.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+, 
+shadows, sun, azimuths, solar altitudes, sunrises, sunsets, windenergy, windturbines, wind mills">
+<!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK='#0066CC' VLINK='#333333' BACKGROUND="../../../res/bg.gif">
+
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT=
+"188">
+<TR>
+<TD COLSPAN="3" VALIGN="TOP"><H2><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="shadowc.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html">
+ <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="shadow2.html">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="RIGHT"
+NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" USEMAP="#ictour2"
+ISMAP> <MAP NAME="wt">
+ <AREA SHAPE="rect" COORDS="0,0,236,40" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../../r/wt.gif" WIDTH="236" HEIGHT="40" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" ALT="www.windpower.org" BORDER="0" USEMAP="#wt" ISMAP></H2>
+</TD></TR>
+<TR>
+<TD WIDTH="120" VALIGN="TOP"><IMG SRC="../../../r/t.gif" WIDTH="120" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"></TD>
+<TD WIDTH="20" ROWSPAN="2" VALIGN="TOP"><IMG SRC="../../../r/t.gif" WIDTH="20" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"></TD>
+<TD WIDTH="370" VALIGN="TOP"><H2><IMG SRC="../../../r/t.gif" WIDTH="370" HEIGHT="1" ALIGN="MIDDLE"
+NATURALSIZEFLAG="0"><BR>
+<FONT FACE='gillsans, frutiger, arial, helvetica, geneva'>Guide to the Wind
+Turbine Shadow Calculator</FONT></H2>
+
+<P>The calculator on the following page allows you to simulate shadows from
+a wind turbine on a plane, horizontal landscape any minute, hour, day, month,
+or year anywhere on the globe.</P>
+
+<P><FONT COLOR="#FF0000" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Warning:</FONT><BR>
+</B><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Huge
+Plots Will Take Their Time - and lots of RAM</B></FONT><BR>
+If you wish to compute shadows for a whole year, it may take your computer
+from 20 minutes to a couple of hours or more, depending on the speed of
+your browser and your machine, and how fine a map resolution and time resolution
+you choose. A fine map resolution (down to 3 pixels square) or a large plot
+area increases processing time and the required amount of RAM on your computer
+significantly.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Which
+Browser?</B></FONT><BR>
+The shadow calculator is an extremely powerful, but computationally demanding
+programme.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">If you use <B><A HREF="http://www.microsoft.com/">Internet Explorer
+4</A></B> for this calculator, be sure to enable Microsoft's Just-in-time
+compiler for JavaScript, since it is much faster. Internet Explorer will
+also give you the option of being able to read the number of minutes of
+shadow anywhere by moving the mouse cursor around the screen, if you select
+that option in your setup.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"><B><A HREF="http://www.netscape.com/">Netscape 4</A></B> will work,
+as well, and on some platforms it is occasionally (but rarely) faster than
+IE4.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"><FONT COLOR="#FF0000">Unfortunately Netscape up to version 4.05 for
+Macintosh appear to have a bug which means that they do not do &quot;garbage
+collection&quot; (cleanup after disused variables) properly.</FONT> This
+means that the programme will run more and more slowly, until you quit your
+browser. Netscape has one advantage, however: You may let the programme
+run in the background while you do something else. (Version 4.06 seems to
+be safe, and faster than its predecessors).<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"><B>Netscape 3</B> is quite fast, but it may very easily get a stack
+overflow and crash, if you use squares of much less than 25 pixels. Netscape
+3 also stops and asks you if you want to continue every time you have completed
+1 million iterations (i.e. repeated calculation steps). Since each month
+takes about 5 million iterations, you'll have to sit around and click &quot;Yes&quot;
+quite a few times. The solution is to upgrade, of course.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Colouring
+the Plot</B></FONT><BR>
+The grey colours in your plot are selected automatically by the programme,
+so that the most shadow affected areas are shown in pure black, while the
+least affected areas are shown in white, regardless of whether you run the
+programme for 1 minute or a year. The unaffected areas remain green.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Screen
+Settings</B></FONT><BR>
+If you have a screen with millions of colours, you will find that the grey
+shadows vary very smoothly across the screen. If you like to be able to
+see the different &quot;bands&quot; of shadow minute values, like we have
+done in our images on this web site, set your monitor to thousands of colours,
+or even 256 colours.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>You
+Can Save Your Shadow Maps</B></FONT><BR>
+If you have generated a shadow map which you want to look at later, or compare
+with another map, you may save the page (e.g. onto your desktop), just like
+any other web page in HTML format, if you use Internet Explorer 4. Just
+choose <B>Save</B> from your file menu, (and take care where you save it,
+and what you name it).</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Read
+the Number of Minutes of Shadows in Each Cell</B></FONT><BR>
+if you have an Internet Explorer 4 browser, and you leave this option on
+when you generate the map, you can do an exact readout (in the status line
+of your browser) of the number of minutes there may be shadows in each cell
+by moving the cursor around on the shadow map.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>You
+May Recolour Your Result</B></FONT><BR>
+The plot uses a number of standard colours which look logical on a colour
+screen. The colours, however, may not be optimal if you wish to print the
+result on a black and white printer. We have therefore included a facility
+which allows you to change the colour scheme without redoing the long calculations:
+You may use a particular colour in a &quot;shadow zone&quot; around the
+turbine. If you use a large high resolution map, it may take a few minutes
+for your programme to do the recolouring (IE 4 is slower than Netscape 4
+for this).</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Paint
+Your Shadow Zone</B></FONT><BR>
+You may modify your plot to show you any zone with a certain minimum number
+of minutes of shadows in a certain colour. Be warned, however, that with
+a large high resolution map, it will take several minutes to complete that
+process.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Other
+Calculator Usage</B></FONT><BR>
+Incidentally, this calculator is very practical for photographers who wish
+to know where the sun is before they go out to take a picture of their favourite
+motive in ideal lighting conditions. (We tested it when photographing wind
+turbines, of course). You may also use it if you wish to know how to place
+a terrace in your garden (regardless of whether you want shadow or sun).</P>
+
+<P><A NAME="location"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Location</B></FONT><BR>
+You may either specify your turbine location using the pop up menu which
+gives the longitude and latitude of a number of cities around the globe,
+or you may enter the longitude and latitude in degrees and minutes directly,
+together with your time zone.</P>
+
+<P><A NAME="timezone"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Time
+Zone</B></FONT><BR>
+The time zone is automatically included, if you use the pop up menu with
+city names. You may enter your time zone relative to GMT from the pop up
+menus, or you may enter the standard time zone meridian, i.e. the longitude
+relative to Greenwich which your local time system uses as a reference,
+which is generally a multiple of 15 degrees, corresponding to a one hour
+time difference. (India and a few other places have a time zone which is
+a multiple of 7.5 degrees, i.e. half an hour).</P>
+
+<P><A NAME="time"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Time</B></FONT><BR>
+You may enter date and time to see the sunrise and sunset times, plus the
+current direction of the light coming from the sun.</P>
+
+<P><A NAME="turbine"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Wind
+Turbine</B></FONT><BR>
+Enter the hub height and the rotor diameter. A typical hub height for a
+600-750 kW wind turbine is 45 to 60 m, a typical rotor diameter is 43 to
+48 m. (You may find typical hub heights and rotor diameters using the <A
+HREF="../../wres/pow/index.html">Wind Turbine Power Calculator</A> turbine
+pop up menu).<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">If you wish to study shadows in areas which are lower than the base
+of the wind turbine, you can cheat, and increase the hub height of the turbine.
+Conversely, you can lower the hub height, if you wish to study areas which
+are higher than the base of the turbine.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">If you enter, say 0.5 for the rotor diameter, you may use the programme
+to study the behaviour of a shadow from the top of a mast, or the corner
+of a building. (Or you can use it to build your own sundial).</P>
+
+<P><A NAME="plot"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Shadow
+Plot</B></FONT><BR>
+You can specify the time range for which you like your shadow images computed.
+You can select a minute, an hour, a day, a month, or a year.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">You may set the <B>plot area</B> to fit your screen size (and/or paper
+output). If you have enough RAM (and time) you may even specify a map larger
+than your screen. The default size prints well on A4 paper in landscape
+format.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">The <B>resolution</B> parameter determines the area covered by each
+3-25 pixel square. We recommend that you let each square represent less
+than half the rotor diameter to get a decent plot. Or, even more cleverly,
+you may set it to match your map resolution, and print your output on an
+acetate (overhead) foil as an overlay to a map of a prospective wind turbine
+location. (One printed pixel is 1/72 of an inch (1 inch = 2.54 cm)).<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">The <B>step length</B> in minutes determines how many rotor images the
+programme projects onto your ground surface. The default step length of
+4 minutes corresponds to the sun <A HREF="#azimuth">azimuth</A> changing
+on average 1 degree between each simulation. You may save processing time
+if you choose a longer step length. For a 1 month or 1 year simulation results
+are generally not affected much by using 8 minute steps - and it is 8 times
+faster than 1 minute steps. If the shadow image is not smooth, (or if it
+is asymmetrical in the East-West direction even if you are not running with
+a fixed rotor direction or a wind rose), your step length may be too large.
+If you double the step length, the programme assumes that the rotor shadow
+stays in the same place for twice as long, i.e. for each rotor image projected
+onto the ground, it adds the step length to a shadow counter for that particular
+area.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">You may choose <B>rotor direction</B> as random (default), which means
+the rotor may be facing in any direction (random azimuth), you may choose
+<B>worst case</B>, where the rotor always faces the sun.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">You may choose a <B>fixed rotor azimuth angle</B> from -90 to 90 degrees.
+The angle is measured relative to South, and the solar angle is positive
+before noon, regardless of hemisphere. 0 means that the wind is coming form
+the South or North. Southeast/Northwest is 45 degrees in the Northern hemisphere,
+and -45 degrees in the Southern hemisphere. East/West is 90 or -90 degrees.
+To help you select the correct angle, you may use the pop up menu.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">Finally, you may choose to enter a <B>wind rose</B> with a frequency
+distribution for your wind directions. Since a normal propeller type wind
+turbine is symmetrical about its rotor plane, you should add the percentages
+for North and South, and so forth in each of your directions. The programme
+accepts 8, 12 and 16 compass directions, which means that you specify 4,
+6, or 8 percentages. The program checks that the sum is exactly 100, before
+it is willing to do the simulation. Please note that wind roses are specified
+with the North as 0 degrees, and that the degrees are given in a clockwise
+direction (retrograde direction).<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">You should specify the <B>fraction of daytime hours the turbine will
+be running.</B> 0.75 is a typical fraction. The basic result in terms of
+minutes of shadows is multiplied by this fraction.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">You should specify the <B>fraction of daytime hours with bright sunshine</B>.
+The basic result in terms of minutes of shadows is multiplied by this fraction.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">If you have accurate statistics on the number of bright sunshine hours
+per month, you may instead use that data in your calculations, by filling
+out <B>the sunshine table</B> at the bottom of the page. In that case the
+programme uses the table data for each month instead of the average. We
+have included sunshine data for 3 Danish locations (you select them from
+the pop up menu). If you have reliable monthly data available for your location,
+please e-mail us (giving the source) so that we may include it in the city
+pop up menu. Remember to check the box that says you want to use the table
+for your calculations. (A clever trick: If you wish to see the pattern of
+shadows during e.g. June, July, and August only, you may set the sunshine
+percentages for the three months only, and leave the rest of the months
+at zero, and then run a simulation for a year, using the sunshine table).<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">You may set a <B>maximum distance from the wind turbine</B> for the
+shadow plot, since it is usually not relevant to look at distances above
+7 to 10 rotor diameters or 1,000 m at the most.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">Finally, you may choose to have your output displayed with <B>mouse-sensitive
+shadow readout</B> (for I.E. 4 browsers), which means that you may read
+the number of minutes of shadow in each cell on the map in your browser's
+status line by placing the mouse cursor on a particular cell. Using this
+mechanism increases RAM demand.</P>
+
+<P><A NAME="sunrise"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Sunrise</B></FONT><BR>
+In this programme the sunrise time is defined as the moment a straight line
+to the centre of the sun passes the horizon in the upwards direction on
+the date you have entered in your data. In your local newspaper, you may
+find that the sunrise is defined as being some minutes earlier, when the
+upper edge of the sun reaches the horizon. In addition, the refraction (bending
+of the light) in the atmosphere means that you can actually see the sun
+before it reaches the horizon. The sunrise is in local time, or daylight
+saving time, if the Daylight saving time box is checked.</P>
+
+<P><A NAME="noon"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Noon</B></FONT><BR>
+The solar noon is when the sun reaches it highest point in the sky, i.e.
+the solar altitude is at its maximum. Noon is in local time, or daylight
+saving time, if the Daylight saving time box is checked.</P>
+
+<P><A NAME="sunset"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Sunset</B></FONT><BR>
+In this programme sunset time is defined as the moment a straight line to
+the centre of the sun passes the horizon in the downwards direction on the
+date you have entered in your data. In your local newspaper, you may find
+that the sunset is defined as being some minutes later, when the upper edge
+of the sun reaches the horizon. In addition, the refraction (bending of
+the light) in the atmosphere means that you can actually see the sun after
+it goes below the horizon. The sunset is in local time, or daylight saving
+time, if the Daylight saving time box is checked.</P>
+
+<P><A NAME="declination"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Declination</B></FONT><BR>
+The declination is the angle between the earth's equatorial plane, and the
+earth-sun line. <FONT SIZE=-1>As the earth rotates, it spins around its
+axis which points to the North Star. This axis is inclined 23.45&deg; relative
+to the plane in which it orbits the sun. The angle between the equatorial
+plane and the earth-sun line thus varies between +/-23.45&deg; during the
+year, being approximately zero on the 21/3 and 23/9 (Equinox), and reaching
+its extreme values on 21/6 and 21/12 (Solstice). (Its precise value varies
+a bit from year to year since a year is 365.25 days long).</FONT></P>
+
+<P><A NAME="lasts"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Sunrise/Sunset
+Duration</B></FONT><BR>
+This is the number of minutes and seconds it takes for the solar disc to
+move the 0.531&deg; between the bottom and the top of the sun at sunrise
+or sunset. At the equator the sunrise and sunset last little more than two
+minutes. As you move towards the polar regions, the duration increases significantly,
+particularly in winter, as you may verify by altering the latitude.</P>
+
+<P><A NAME="azimuth"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Solar
+Azimuth</B></FONT><BR>
+The solar azimuth is the angle in the horizontal plane between the South
+and the sun at the moment in time you have entered in your data. The angle
+is positive before noon, negative after noon (regardless of hemisphere).</P>
+
+<P><A NAME="altitude"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Solar
+Altitude</B></FONT><BR>
+The solar altitude is the angle between the horizontal plane and the sun.</P>
+
+<P><A NAME="solarvector"></A><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Direction
+form the Sun (Sun Vector)</B></FONT><BR>
+If you are standing in the centre of the turbine with your back towards
+the South, and you move x units of length to the right (East), y ahead (North),
+and z up (or rather -z down), then a straight line from your new position
+to the centre of the turbine will be pointing directly to the sun. The values
+for x, y, and z are given in the three boxes.</TD></TR>
+<TR>
+<TD VALIGN="BOTTOM"><IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"></TD>
+<TD VALIGN="TOP"><P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="shadowc.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html">
+ <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="shadow2.html">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="TOP"
+NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" USEMAP="#ictour2"
+ISMAP></P>
+
+<P ALIGN=CENTER><FONT FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=-1>|
+<A HREF="shadow2.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A> |
+<A HREF="shadowc.html">Forward</A> | <BR>
+<A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 1998 Soren Krohn. All rights reserved.</A><BR>
+Updated 26 September 2000<BR>
+http://www.windpower.org/tour/env/shadow/guide.htm</FONT></TD></TR>
+</TABLE>
+</P>
+
+<P><IMG SRC="../../../res/calc.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0"><IMG SRC="../../../res/bluepix.gif" WIDTH=
+"1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG SRC="../../../r/t.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG SRC=
+"../../../res/green.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG=
+"3" BORDER="0"><IMG SRC="../../../res/redpix.gif" WIDTH="1" HEIGHT="1" 
+ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG SRC="../../../res/blpix.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG SRC=
+"../../../res/whpix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG=
+"3" BORDER="0"><IMG SRC="../../../res/ypix.gif" WIDTH="1" HEIGHT="1" ALIGN=
+"BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG SRC="../../../res/x.gif" WIDTH=
+"1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"> <MAP NAME=
+"www">
+ <AREA SHAPE="rect" COORDS="0,0,1,1" HREF="http://ele.aut.ac.ir/~wind/en/core.htm" TARGET="_top">
+</MAP><IMG SRC="../../../r/www.gif" WIDTH="1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG=
+"0" BORDER="0" USEMAP="#www" ISMAP>
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/shadow/guide.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:15 GMT -->
+</HTML>

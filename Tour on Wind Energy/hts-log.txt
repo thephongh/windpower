@@ -1,0 +1,22 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 15 Mar 2024 09:40:11 at http://ele.aut.ac.ir/~wind/en/tour/index.htm +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv
+(winhttrack -qwC2t%Pns2u1%s%uN0%I0p7DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://ele.aut.ac.ir/~wind/en/tour/index.htm -O1 "C:\My Web Sites\Tour on Wind Energy" +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:41:55	Warning: 	Link ele.aut.ac.ir/~wind/en/tour/wres/weibull/index.htm not scanned (follow robots meta tag)
+09:42:01	Warning: 	Link ele.aut.ac.ir/~wind/en/tour/wtrb/comp/index.htm not scanned (follow robots meta tag)
+09:43:07	Warning: 	Link ele.aut.ac.ir/~wind/en/tour/env/db/dbcalc.htm not scanned (follow robots meta tag)
+09:43:20	Warning: 	Link ele.aut.ac.ir/~wind/en/tour/grid/house/house.htm not scanned (follow robots meta tag)
+09:43:20	Warning: 	HTML file (10197 bytes) retransferred due to lack of cache: ele.aut.ac.ir/~wind/en/tour/intro/index.htm
+09:43:21	Warning: 	HTML file (6174 bytes) retransferred due to lack of cache: ele.aut.ac.ir/~wind/en/tour/wres/index.htm
+09:43:22	Warning: 	HTML file (5621 bytes) retransferred due to lack of cache: ele.aut.ac.ir/~wind/en/tour/rd/foundoff.htm
+09:43:23	Warning: 	HTML file (4463 bytes) retransferred due to lack of cache: ele.aut.ac.ir/~wind/en/tour/grid/house/house.htm
+09:43:24	Warning: 	Link ele.aut.ac.ir/~wind/en/tour/grid/house/house.htm not scanned (follow robots meta tag)
+09:43:24	Error: 	"Not Found" (404) at link ele.aut.ac.ir/~wind/en/publ/wpnemple.pdf (from ele.aut.ac.ir/~wind/en/tour/econ/empl.htm)
+09:43:24	Error: 	"Not Found" (404) at link ele.aut.ac.ir/~wind/en/movies/foundmsk.mov (from ele.aut.ac.ir/~wind/en/tour/rd/foundoff.htm)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 13 seconds : 370 links scanned, 371 files written (2907671 bytes overall) [3032720 bytes received at 15713 bytes/sec], 16.0 requests per connection
+(2 errors, 9 warnings, 0 messages)

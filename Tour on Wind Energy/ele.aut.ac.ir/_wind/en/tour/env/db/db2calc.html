@@ -1,0 +1,260 @@
+<HTML>  
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/db/db2calc.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:07 GMT -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>Wind Turbine Sound Calculator</TITLE>
+  <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+
+<META NAME="Description" CONTENT="This worksheet allows you to do more accurate calculations of sound from wind turbines.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+,
+sound level, propagation, source noise, db(A), distance, limits, windenergy, windturbines, wind mills">
+  <!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#0066cc" VLINK="#333333">
+
+<FORM>
+<TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD COLSPAN="6" VALIGN="TOP"><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="../enpaybk.html" TARGET="_top">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html" TARGET="_top">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="dbcalc.html" TARGET="_top">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20"
+      ALIGN="RIGHT" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd"
+      USEMAP="#ictour2" ISMAP HSPACE="0"> <MAP NAME="www">
+    <AREA SHAPE="rect" COORDS="0,0,221,23" HREF="http://ele.aut.ac.ir/~wind/en/core.htm" TARGET="_top">
+</MAP><IMG SRC="../../../r/www.gif" WIDTH="221" HEIGHT="23" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0" BORDER="0" USEMAP="#www" ISMAP ALT="www.windpower.org"></TD>
+     
+  </TR>
+  <TR>
+    <TD WIDTH="445" COLSPAN="5">
+      <H2><IMG SRC="../../../r/t.gif" WIDTH="370" HEIGHT="1" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0"><BR>
+      <FONT FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine Sound Calculator</FONT></H2>
+
+      <P><FONT COLOR="#ff0000" SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><NOSCRIPT>This
+      calculator requires a Netscape 3.0 or later browser to work.
+      If you are using Navigator 3.0 or later and you see this message,
+      you need to enable JavaScript. Choose Options | Network Preferences,
+      choose the Languages tab, and click Enable JavaScript. Then click
+      reload on your browser. </NOSCRIPT>Do not operate the form until
+      this page and its programme have loaded completely. </FONT><FONT
+       SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">You
+      may enter source noise and distance for up to ten wind turbines
+      in the worksheet below to calculate the resulting sound at a
+      particular point. The calculator assumes that sound absorption
+      and reflection cancel one another out, although local noise regulations
+      may specify rules for this. You should have read the pages on
+      <A HREF="../sound.html">Sound from Wind Turbines</A> and <A HREF="dbdef.html">Measuring
+      and Calculating Sound Levels</A> before using the calculator.
+      You may learn more about the technical details of sound calculations
+      in the <A HREF="http://ele.aut.ac.ir/~wind/en/stat/unitssnd.htm#sound">Reference Manual
+      on Acoustics</A>.</FONT>
+    </TD>
+    <TD WIDTH="65" ROWSPAN="15" VALIGN="TOP" ALIGN="CENTER" BGCOLOR="#0066cc"><IMG 
+      SRC="../../../res/bluepix.gif" WIDTH="65" HEIGHT="20" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0"><BR>
+      <IMG SRC="../../../res/calc.gif" WIDTH="47" HEIGHT="312" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" BORDER="0"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"></TD>
+    <TD><FONT SIZE="-1">Turbine<BR>
+      Source dB(A)</FONT></TD> 
+    <TD><FONT SIZE="-1">Distance m</FONT></TD> 
+    <TD><FONT SIZE="-1">Resulting dB(A)<BR>
+      Sound Level</FONT></TD> 
+    <TD><FONT SIZE="-1">Sound Power<BR>
+      W/m<SUP>2</SUP></FONT></TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="37" ALIGN="RIGHT"><FONT SIZE="-1">1</FONT></TD> 
+    <TD WIDTH="63"><INPUT onChange="CdB(0)" NAME="dB0" TYPE="text"
+      SIZE="5" VALUE="100"></TD> 
+    <TD WIDTH="55"><INPUT onChange="Cm(0)" NAME="m0" TYPE="text"
+      SIZE="4" VALUE="300"></TD> 
+    <TD WIDTH="101"><INPUT onChange="CrdB(0)" NAME="rdB0" TYPE="text"
+      SIZE="10" VALUE="39.465476266190095"></TD> 
+    <TD WIDTH="132"><INPUT onChange="CWm(0)" NAME="Wm0" TYPE="text"
+      SIZE="14" VALUE="0.000000008841941284520594"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">2</FONT></TD> 
+    <TD><INPUT onChange="CdB(1)" NAME="dB1" TYPE="text" SIZE="5"
+      VALUE="100"></TD> 
+    <TD><INPUT onChange="Cm(1)" NAME="m1" TYPE="text" SIZE="4" VALUE="250"></TD> 
+    <TD><INPUT onChange="CrdB(1)" NAME="rdB1" TYPE="text" SIZE="10"
+      VALUE="41.049101187142604"></TD> 
+    <TD><INPUT onChange="CWm(1)" NAME="Wm1" TYPE="text" SIZE="14"
+      VALUE="0.000000012732395449709697"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">3</FONT></TD> 
+    <TD><INPUT onChange="CdB(2)" NAME="dB2" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(2)" NAME="m2" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(2)" NAME="rdB2" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(2)" NAME="Wm2" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">4</FONT></TD> 
+    <TD><INPUT onChange="CdB(3)" NAME="dB3" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(3)" NAME="m3" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(3)" NAME="rdB3" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(3)" NAME="Wm3" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">5</FONT></TD> 
+    <TD><INPUT onChange="CdB(4)" NAME="dB4" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(4)" NAME="m4" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(4)" NAME="rdB4" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(4)" NAME="Wm4" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">6</FONT></TD> 
+    <TD><INPUT onChange="CdB(5)" NAME="dB5" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(5)" NAME="m5" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(5)" NAME="rdB5" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(5)" NAME="Wm5" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">7</FONT></TD> 
+    <TD><INPUT onChange="CdB(6)" NAME="dB6" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(6)" NAME="m6" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(6)" NAME="rdB6" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(6)" NAME="Wm6" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">8</FONT></TD> 
+    <TD><INPUT onChange="CdB(7)" NAME="dB7" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(7)" NAME="m7" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(7)" NAME="rdB7" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(7)" NAME="Wm7" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">9</FONT></TD> 
+    <TD><INPUT onChange="CdB(8)" NAME="dB8" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(8)" NAME="m8" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(8)" NAME="rdB8" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(8)" NAME="Wm8" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">10</FONT></TD> 
+    <TD><INPUT onChange="CdB(9)" NAME="dB9" TYPE="text" SIZE="5"></TD> 
+    <TD><INPUT onChange="Cm(9)" NAME="m9" TYPE="text" SIZE="4"></TD> 
+    <TD><INPUT onChange="CrdB(9)" NAME="rdB9" TYPE="text" SIZE="10"></TD> 
+    <TD><INPUT onChange="CWm(9)" NAME="Wm9" TYPE="text" SIZE="14"></TD> 
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT SIZE="-1">Sum=</FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="rdB10" onChange="CrdB(10)" TYPE="text" SIZE="10"
+      VALUE="43.3393745295774"></TD> 
+    <TD><INPUT NAME="Wm10" onChange="CWm(10)" TYPE="text" SIZE="14"
+      VALUE="0.00000002157433673423029"></TD> 
+  </TR>
+  <TR>
+    <TD COLSPAN="5" VALIGN="TOP"><INPUT NAME="name" TYPE="button" VALUE="Calculate" onClick="calc()"><INPUT
+      NAME="name" TYPE="reset" VALUE="Reset"></TD>
+     
+  </TR>
+  <TR>
+    <TD COLSPAN="5">
+      <P><CENTER>&nbsp;</CENTER></P>
+
+      <P><CENTER><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="../enpaybk.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="dbcalc.html">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20"
+      ALIGN="TOP" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd"
+      USEMAP="#ictour2" ISMAP></CENTER></P>
+
+      <P><CENTER><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">|
+      <A HREF="dbcalc.html">Back</A> | <A HREF="../../wres/index.html">Home</A>
+      | <A HREF="../enpaybk.html">Forward</A> | <BR>
+      <A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 2001 Soren Krohn.
+      All rights reserved.</A><BR>
+      Updated 11 april 2001<BR>
+      http://www.windpower.org/tour/env/db/db2calc.htm</FONT></CENTER>
+    </TD>
+  </TR>
+</TABLE><!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+// Copyright (c) 1997 Soren Krohn & Danish Wind Turbine Manufacturers Association
+function CdB(n) {
+	var a=parseFloat(document.forms[0].elements["dB"+n].value);
+	if (a<45) {
+		alert("It is very unlikely that your turbine will have a source noise which is less than a refrigerator (45 dB(A))");
+		document.forms[0].elements["dB"+n].value=100;}
+	if (a>125) {
+		alert(a+" dB(A) sounds more like a jet engine. Where on earth did you get such a wind turbine?");
+		document.forms[0].elements["dB"+n].value=100;}
+	calc();
+}
+function Cm(n) {
+	var a=parseFloat(document.forms[0].elements["m"+n].value);
+	if (a<50) {
+		alert(a+" m is too close to this turbine to make accurate noise assessment. Minimum distance is 50 m.");
+		document.forms[0].elements["m"+n].value=50;}
+	if (a>1000) {
+		alert(a+" m away everything is likely to be drowned out by background noise. Maximum distance is 1000 m.");
+		document.forms[0].elements["m"+n].value=1000;}
+	calc();
+}
+function CrdB(n) {
+	document.forms[0].elements["rdB"+n].value="";
+	alert("Sorry, you cannot change a result field");
+	calc();
+}
+function CWm(n) {
+	document.forms[0].elements["Wm"+n].value="";
+	alert("Sorry, you cannot change a result field");
+	calc();
+}
+function calc() {
+	var dB=0;
+	var m=0;
+	var rdB=0;
+	var Wm=0;
+	var WmSum=0;
+	var base10=Math.log(10);
+	for (var i=0;i<10;i++) {
+		document.forms[0].elements["rdB"+i].value="";
+		document.forms[0].elements["Wm"+i].value="";
+		if ((document.forms[0].elements["dB"+i].value!="") && (document.forms[0].elements["m"+i].value!="")) {
+			dB=parseFloat(document.forms[0].elements["dB"+i].value);
+			m=parseFloat(document.forms[0].elements["m"+i].value);
+			rdB=dB-20*Math.log(m/0.2820947918)/base10;
+			document.forms[0].elements["rdB"+i].value=rdB;
+			Wm=Math.pow(10,(rdB-120)/10);
+			document.forms[0].elements["Wm"+i].value=Wm;
+			WmSum+=Wm;
+		}
+	}
+	document.forms[0].elements.Wm10.value=WmSum;
+	document.forms[0].elements.rdB10.value=120+10*Math.log(WmSum)/base10;
+}
+//-->
+</SCRIPT>
+<!--/NOEDIT--><!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT--></FORM>
+
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/db/db2calc.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:07 GMT -->
+</HTML>

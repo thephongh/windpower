@@ -1,0 +1,156 @@
+<HTML>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wtrb/varislip.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:42:18 GMT -->
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Mac">
+ <TITLE>Variable Slip Generators for Wind Turbines</TITLE>
+ <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+<META NAME="Description" CONTENT="(Partially) variable speed operation of wind turbines is possible using variable slip generators. This page explains how.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+asynchronous generators, variable slip, variable speed, windenergy, windturbines, wind mills">
+<!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK='#0066CC' VLINK='#333333' BACKGROUND="../../res/bg.gif">
+
+<TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD COLSPAN="3" VALIGN="TOP"><H2><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="indirect.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+ <AREA SHAPE="rect" COORDS="1,1,20,20" HREF="stator.html">
+</MAP><IMG SRC="../../r/itour2.gif" ALIGN="RIGHT" BORDER="0" ALT="Back, Guided Tour, Fwd"
+USEMAP="#ictour2" ISMAP WIDTH="160" HEIGHT="20" NATURALSIZEFLAG="3"> <MAP
+NAME="wt">
+ <AREA SHAPE="rect" COORDS="0,0,236,40" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/wt.gif" WIDTH="236" HEIGHT="40" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" ALT="www.windpower.org" BORDER="0" USEMAP="#wt" ISMAP></H2>
+</TD></TR>
+<TR>
+<TD WIDTH="120" VALIGN="TOP"><IMG SRC="../../r/t.gif" WIDTH="120" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"></TD>
+<TD VALIGN="TOP" WIDTH="20"><IMG SRC="../../r/t.gif" WIDTH="20" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"></TD>
+<TD WIDTH="370" VALIGN="TOP"><H2><FONT FACE='gillsans, frutiger, arial, helvetica, geneva'>Variable Slip
+Generators for Wind Turbines</FONT></H2>
+
+<P><IMG SRC="../../r/t.gif" WIDTH="370" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"><BR>
+Manufacturers of electric motors have for many years been faced with the
+problem that their motors can only run at certain almost <A HREF="genpoles.html#syncspeed">fixed
+speeds</A> determined by the number of poles in the motor.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">As we learned on the previous page, the motor (or generator) <A HREF=
+"async.html#slip">slip</A> in an asynchronous (induction) machine is usually
+very small for reasons of efficiency, so the rotational speed will vary
+with around 1 per cent between idle and full load.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">The slip, however is a function of the (DC) resistance (measured in
+ohms) in the rotor windings of the generator. The higher resistance, the
+higher the slip. so one way of varying the slip is to vary the resistance
+in the rotor. In this way one may increase generator slip to e.g. 10 per
+cent.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">On motors, this is usually done by having a wound rotor, i.e. a rotor
+with copper wire windings which are connected in a <A HREF="http://ele.aut.ac.ir/~wind/en/stat/unitac3c.htm">star</A>,
+and connected with external variable resistors, plus an electronic control
+system to operate the resistors. The connection has usually been done with
+brushes and slip rings, which is a clear drawback over the elegantly simple
+technical design of an cage wound rotor machine. It also introduces parts
+which wear down in the generator, and thus the generator requires extra
+maintenance.</P>
+
+<P><FONT COLOR="#0066CC" SIZE=+1 FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Opti
+Slip </B>&reg;</FONT><BR>
+An interesting variation of the variable slip induction generator avoids
+the problem of introducing slip rings, brushes, external resistors, and
+maintenance altogether.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">By mounting the external resistors on the rotor itself, and mounting
+the electronic control system on the rotor as well, you still have the problem
+of how to communicate the amount of slip you need to the rotor. This communication
+can be done very elegantly, however, using optical fibre communications,
+and sending the signal across to the rotor electronics each time it passes
+a stationary optical fibre.</P>
+
+<P><FONT COLOR="#0066CC" SIZE=+1 FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Running
+a Pitch Controlled Turbine at Variable Speed</B></FONT><BR>
+As mentioned on the next page, there are a number of advantages of being
+able to run a wind turbine at variable speed.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">One good reason for wanting to be able to run a turbine partially at
+variable speed is the fact that <A HREF="powerreg.html">pitch control</A>
+(controlling the torque in order not to overload the gearbox and generator
+by pitching the wind turbine blades) is a mechanical process. This means
+that the reaction time for the pitch mechanism becomes a critical factor
+in turbine design.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">If you have a variable slip generator, however, you may start increasing
+its slip once you are close to the rated power of the turbine. The control
+strategy applied in a widely used Danish turbine design (600 kW and up)
+is to run the generator at half of its maximum slip when the turbine is
+operating near the rated power. When a wind gust occurs, the control mechanism
+signals to increase generator slip to allow the rotor to run a bit faster
+while the pitch mechanism begins to cope with the situation by pitching
+the blades more out of the wind. Once the pitch mechanism has done its work,
+the slip is decreased again. In case the wind suddenly drops, the process
+is applied in reverse.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">Although these concepts may sound simple, it is quite a technical challenge
+to ensure that the two power control mechanisms co-operate efficiently.</P>
+
+<P><FONT COLOR="#0066CC" SIZE=+1 FACE='gillsans, frutiger, arial, helvetica, geneva'><B>Improving
+Power Quality</B></FONT><BR>
+You may protest that running a generator at high slip releases more heat
+from the generator, which runs less efficiently. That is not a problem in
+itself, however, since the only alternative is to waste the excess wind
+energy by pitching the rotor blades out of the wind.<BR>
+<IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">One of the real benefits of using the control strategy mentioned here
+is that you get a better power quality, since the fluctuations in power
+output are &quot;eaten up&quot; or &quot;topped up&quot; by varying the
+generator slip and storing or releasing part of the energy as rotational
+energy in the wind turbine rotor.</TD></TR>
+<TR>
+<TD VALIGN="BOTTOM"><MAP NAME="ihome">
+ <AREA SHAPE="rect" COORDS="0,0,120,20" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/ihome.gif" WIDTH="120" HEIGHT="20" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0" ALT="Home" USEMAP="#ihome" ISMAP></TD>
+<TD>&nbsp;</TD>
+<TD VALIGN="TOP"><P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="indirect.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+ <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="stator.html">
+</MAP><IMG SRC="../../r/itour2.gif" ALIGN="BOTTOM" BORDER="0" ALT="Back, Guided Tour, Fwd"
+USEMAP="#ictour2" ISMAP WIDTH="160" HEIGHT="20" NATURALSIZEFLAG="3"></P>
+
+<P ALIGN=CENTER><FONT FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=-1>|
+<A HREF="stator.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A> | <A 
+HREF="indirect.html">Forward</A> | <BR>
+<A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 1998 Soren Krohn. All rights reserved.</A><BR>
+Updated 6 August 2000<BR>
+http://www.windpower.org/tour/wtrb/varislip.htm</FONT></TD></TR>
+</TABLE>
+<IMG SRC="../../res/indirect.gif" WIDTH="1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG=
+"0" BORDER="0"><IMG SRC="../../res/varisine.gif" WIDTH="1" HEIGHT="1" ALIGN=
+"TOP" NATURALSIZEFLAG="0" BORDER="0"><IMG SRC="../../res/dcmovie.gif" WIDTH=
+"1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG="0" BORDER="0"><IMG SRC="../../res/rectmovi.gif"
+WIDTH="1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG="0" BORDER="0"><IMG SRC=
+"../../res/fixdsine.gif" WIDTH="1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG=
+"0" BORDER="0">
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wtrb/varislip.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:42:21 GMT -->
+</HTML>

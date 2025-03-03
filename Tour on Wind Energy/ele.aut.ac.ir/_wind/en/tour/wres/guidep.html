@@ -1,0 +1,336 @@
+<HTML>  
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wres/guidep.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:41:59 GMT -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>Guide to the Wind Turbine Power Calculator</TITLE>
+  <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+<META NAME="Description" CONTENT="This page explains how the Wind Turbine Power Calculator works.">
+<META NAME="Keywords" CONTENT="power curves, mean power coefficients, power density functions, calculator,
+power input, power output, energy input, energy output, efficiency,
+wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark, windenergy, windturbines, wind mills">
+  <!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK='#0066CC' VLINK='#333333' BACKGROUND="../../res/bg.gif">
+
+
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD COLSPAN="2" VALIGN="TOP"><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="pow/index.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="cp.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="RIGHT"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" 
+      USEMAP="#ictour2" ISMAP> <MAP NAME="wt">
+    <AREA SHAPE="rect" COORDS="0,0,236,40" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/wt.gif" WIDTH="236" HEIGHT="40" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" ALT="www.windpower.org" BORDER="0" USEMAP="#wt"
+      ISMAP></TD>
+  </TR> 
+  <TR>
+    <TD WIDTH="140" VALIGN="TOP"><IMG SRC="../../r/t.gif" WIDTH="140"
+      HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0"></TD> 
+    <TD WIDTH="370" VALIGN="TOP">
+      <H2><FONT FACE="gillsans, frutiger, arial, helvetica, geneva">Guide
+      to the Wind Turbine Power Calculator</FONT></H2>
+
+      <P><IMG SRC="../../r/t.gif" WIDTH="370" HEIGHT="1" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0"><BR>
+      If you have room on your screen, you may <A HREF="pow/index.html"
+      TARGET="_blank">open another browser window with the calculator</A>,
+      in order to look at it while you look at this guide. <FONT COLOR="#ff0000">If
+      you do not want to read all of these instructions, please read
+      the advice at the bottom of the page in any case.</FONT></P>
+
+      <P><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Using
+      the Power Curve and the Weibull distribution to Estimate Power
+      and Energy Output</FONT></B><BR>
+      In order to use the power curve properly, you have to combine
+      your knowledge of the Weibull distribution with the power curve.
+      This is what we will be doing using the power density calculator
+      on the next page:<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">For each tiny 0.1 metre interval of wind
+      speeds we multiply the probability of that wind speed interval
+      (from the Weibull curve) with the value from the power curve
+      of the wind turbine.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">We then take the sum of all these multiplications
+      to get the mean (or average) <B>power</B> output.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">If we multiply the <B>power</B> by 365.25
+      by 24 (the number of hours in a year) we get the total <B>energy</B>
+      output for an average year.</P>
+
+      <P><A NAME="site"></A><B><FONT COLOR="#0066cc" SIZE="+1" FACE="gillsans, frutiger, arial, helvetica, geneva">Site
+      Data</FONT></B><BR>
+      Use the pop up menu to fill out European wind distribution data
+      automatically. The data calculated for roughness classes 0, 1,
+      2, and 3 was taken from the European wind atlas. If you use roughness
+      class 1.5, we interpolate to find the data. If you have data
+      for other parts of the world you would like to have included,
+      please <A HREF="http://ele.aut.ac.ir/~wind/en/email.htm">e-mail</A> us.</P>
+
+      <P><A NAME="density"></A><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Air
+      Density Data</FONT></B><BR>
+      As we learned on a previous page, <A HREF="enerwind.html">the
+      energy in the wind</A> varies in proportion to the density of
+      air. Try changing the air temperature from, say 40 degrees Celsius,
+      to -20 degrees Celsius. There are almost 25 per cent more air
+      molecules in a cubic metre of the cold air than in a cubic metre
+      of the warm air, so watch what happens to the energy output...<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">If you wish to change the altitude above
+      sea level, then start setting the temperature at sea level first.
+      The programme will then automatically compute the likely temperature
+      and pressure at the altitude you set.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">You may set the air density directly, if
+      you know what you are doing. The programme then computes a likely
+      set of data for the other variables. (You may also change the
+      air pressure, but you'd better leave it alone. Your air pressure
+      obviously has to fit to the local altitude and temperature).</P>
+
+      <P><A NAME="anchor1010667"></A><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Distribution Data</FONT></B><BR>
+      The <A HREF="weibull.html">Weibull</A> shape parameter is generally
+      around 2 in Northern Europe, but situations vary, so you may
+      really need a wind atlas to set this more accurately. You can
+      either enter the mean wind speed, or the Weibull scale parameter
+      (the programme then automatically computes) the other.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">The measurement height for your wind speed
+      is very important, because wind speeds increase with heights
+      above ground level, cf. the page on <A HREF="shear.html">wind
+      shear</A>. Meteorology observations are generally made at 10
+      m height, but anemometer studies are often made at hub height
+      of the wind turbine (in our example 50 metres).<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">The average <A HREF="shear.html#rough">roughness</A>
+      of the surrounding terrain is important to determine the wind
+      speed at turbine hub height, if it differs from the height at
+      which wind speed measurements were made. You may either set the
+      roughness length or the roughness class, depending on the local
+      landscape type. (See the <A HREF="http://ele.aut.ac.ir/~wind/en/stat/unitsw.htm#roughness">Reference
+      Manual</A> for guidelines on roughness classes).
+    </TD>
+  </TR> 
+</TABLE></P>
+
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0"
+HEIGHT="708">
+  <TR>
+    <TD WIDTH="140" VALIGN="TOP"><IMG SRC="../../r/t.gif"
+      WIDTH="140" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0"></TD> 
+    <TD WIDTH="370" VALIGN="TOP">
+      <P><A NAME="anchor1013062"></A><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine Data</FONT></B><BR>
+      This section of the calculator lets you specify the rated power
+      of the main generator, the rotor diameter, the <A HREF="powdensi.html#anchor577575">cut
+      in wind speed</A>, and the <A HREF="powdensi.html#anchor939257">cut
+      out wind speed</A>, and the hub height of your machine. At the
+      bottom of the page you may then specify the power curve of your
+      machine.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">It is much easier, however, to use the first
+      pop up menu which allows you to set all turbine specifications
+      using a built-in table of data for typical Danish wind turbines.
+      We have already put data for a typical 600 kW machine in the
+      form for you, but you may experiment by looking at other machines.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">The second pop up menu will allow you to
+      choose from the available hub heights for the machine you have
+      chosen. You may also enter a hub height of your own, if you wish.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">Try experimenting a bit with different hub
+      heights, and see how energy output varies. The effect is particularly
+      noticeable if the machine is located in terrain with a high roughness
+      class. (You can modify the roughness class in the wind distribution
+      data to see for yourself).<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">If you modify the standard machine specifications,
+      the text on the first pop up menu changes to <B>User example</B>,
+      to show that you are not dealing with a standard machine. It
+      is safe to play with all of the variables, but it does <B>not</B>
+      make much sense to change the generator size or rotor diameter
+      for a standard machine, unless you also change the power curve.
+      We only use the rotor diameter to show the power input, and to
+      compute the efficiency of the machine (in terms of the <A HREF="cp.html">power
+      coefficient</A>). We only use the rated power of the generator
+      to compute the <A HREF="#cap">capacity factor</A>.</P>
+
+      <P><A NAME="anchor1016981"></A><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine Power Curve</FONT></B><BR>
+      For practical reasons (keeping your input data and your results
+      in view at the same time) we have placed the listing of the turbine
+      <A HREF="pwr.html">power curve</A> at the bottom of the page.
+      You can use this area to specify a turbine which is not listed
+      in the built-in table. The only requirement is that wind speeds
+      be ordered sequentially in ascending (increasing) order.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">The programme approximates the power curve
+      with a straight line between each two successive points which
+      have non zero values for the power output. <BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Note:</B> The programme only uses wind
+      speeds up to 40 m/s in its calculations of the wind climate,
+      so do not bother about fantasy machines that work beyond 30 m/s.</P>
+
+      <P><A NAME="anchor1015184"></A><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Control
+      Buttons<BR>
+      </FONT>Calculate</B> recalculates the results on the form. You
+      may also click anywhere else or use the tab key after you have
+      entered data to activate the calculator. Note that if you change
+      the power curve, the machine will not recalculate your data until
+      you click calculate, or change other data.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Reset Data</B> sets the data back to the
+      user example you first encountered on your screen.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Power Density</B> plots the <A HREF="powdensi.html">power
+      density graph</A> for this site and machine in a separate window.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Power Curve</B> plots the <A HREF="pwr.html">power
+      curve</A> for the machine you have selected in a separate window.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Power Coefficient</B> plots the <A HREF="cp.html">power
+      coefficient</A>, i.e. the efficiency of the machine at different
+      wind speeds.</P>
+
+      <P><A NAME="anchor1020872"></A><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Site
+      Power Input Results<BR>
+      </FONT>Power input per square metre rotor area</B> shows the
+      amount of energy in the wind which theoretically would flow through
+      the circle containing the rotor area, if the rotor were not present.
+      (In reality, part of the airflow will be diverted outside the
+      rotor area due to the high pressure area in front of the rotor).<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Maximum power input at x m/s</B> shows
+      at what wind speed we achieve the highest contribution to total
+      power output. The figure is usually much higher than average
+      wind speed, cf. the page on the <A HREF="powdensi.html">power
+      density function</A>.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Mean hub height wind speed</B> shows how
+      the programme recalculates your wind data to the proper hub height.
+      If you have specified a hub height which is different from the
+      height at which wind measurements were taken, the programme automatically
+      recalculates all wind speeds in the Weibull distribution in accordance
+      with the roughness class (or roughness length) you have specified.</P>
+
+      <P><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Turbine
+      Power Output Results<BR>
+      </FONT>Power output per square metre of rotor area</B> tells
+      us how much of the power input per square metre the machine will
+      convert to electricity. Generally, you will find that it is cost
+      effective to build the machine to use about 30 per cent of the
+      power available. (Please note, that the figure for site power
+      <B>input</B> includes the power for wind speeds outside the cut
+      in/cut out wind speed range, so you cannot divide by that figure
+      to obtain the average power coefficient).<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Energy output per square metre rotor area
+      per year</B>, is simply the mean power output per square metre
+      rotor area multiplied by the number of hours in a year.</P>
+
+      <P><A NAME="anchor1866417"></A><IMG SRC="../../r/t.gif" WIDTH="8"
+      HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG="0"><B>Energy output
+      in kWh per year</B>, tells us how much electrical energy the
+      wind turbine will produce in an average year. That is probably
+      the figure the owner cares more about than the rest. When the
+      owner considers that figure, however, he will also have to take
+      the price of the machine, its reliability, and the cost of operation
+      and maintenance. We return to those subjects in the section on
+      <A HREF="../econ/index.html">the economics of wind energy</A>.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">The annual energy output calculated here
+      may be slightly different from the real figures from the manufacturer.
+      This is particularly the case if you vary the density of air.
+      In that case the manufacturer will calculate different power
+      curves for each density of air. The reason is, that with a <A
+      HREF="../wtrb/powerreg.html">pitch controlled</A> turbine the
+      pitching mechanism will automatically change the pitch angle
+      of the blade with the change of air density, while for a <A 
+      HREF="../wtrb/powerreg.html#anchor1387445">stall controlled</A>
+      turbine, the manufacturer will set the angle of the blade slightly
+      differently depending on the local average air density. This
+      programme may be up to 3.6% below the correct figure from the
+      manufacturer for low air densities, and up to 1.6% above the
+      manufacturers' figures for high air densities.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><A NAME="cap"></A><B>Capacity factor</B>
+      tells us how much the turbine uses the rated capacity of its
+      (main) generator. You may read more on the page on <A HREF="annu.html#capfac">annual
+      energy output from a wind turbine</A>.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B><FONT COLOR="#ff0000">Note 1:</FONT></B><FONT
+       COLOR="#ff0000"> Make sure that you use the same hub height,
+      if you wish to compare how two machines with the same rotor diameter
+      perform.<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Note 2:</B> If you wish to compare machines
+      with different rotor diameters you should look at the energy
+      output per square metre of rotor area instead (you should still
+      use the same hub height).<BR>
+      <IMG SRC="../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0"><B>Note 3:</B> Low wind machines (large rotor
+      diameter relative to generator size) will generally perform badly
+      at high wind sites and vice versa. Most low wind machines are
+      not designed for use in high wind areas with strong gusts.</FONT>
+    </TD>
+  </TR> 
+  <TR>
+    <TD VALIGN="BOTTOM"><MAP NAME="ihome">
+    <AREA SHAPE="rect" COORDS="0,0,120,20" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../r/ihome.gif" WIDTH="120" HEIGHT="20" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Home" USEMAP="#ihome" ISMAP></TD> 
+    <TD VALIGN="TOP">
+      <P>&nbsp;</P>
+
+      <P ALIGN=CENTER><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="pow/index.html">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../index.html">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="cp.html">
+</MAP><IMG SRC="../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" 
+      USEMAP="#ictour2" ISMAP></P>
+
+      <P ALIGN=CENTER><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">|
+      <A HREF="cp.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A>
+      | <A HREF="pow/index.html">Forward</A> | <BR>
+      <A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 1998 Soren Krohn.
+      All rights reserved.</A><BR>
+      Updated 6 August 2000<BR>
+      http://www.windpower.org/tour/wres/guidep.htm</FONT>
+    </TD>
+  </TR> 
+</TABLE></P>
+
+<P><IMG SRC="../../res/grpix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0"> <IMG SRC="../../res/redpix.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0">
+<IMG SRC="../../res/bluepix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0"> <IMG SRC="../../res/blpix.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><IMG 
+SRC="../../res/calc.gif" WIDTH="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0"
+HEIGHT="1" BORDER="0"> <MAP NAME="kort">
+    <AREA SHAPE="rect" COORDS="0,0,1,1" HREF="#anchor1013062">
+</MAP><IMG SRC="../../res/kort.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="0" BORDER="0" USEMAP="#kort" ISMAP>
+
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/wres/guidep.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:41:59 GMT -->
+</HTML>

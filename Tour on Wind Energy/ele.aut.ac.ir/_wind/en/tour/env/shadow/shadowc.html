@@ -1,0 +1,620 @@
+<HTML>  
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/shadow/shadowc.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:15 GMT -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>Wind Turbine Shadow Calculator</TITLE>
+  <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+
+<META NAME="Description" CONTENT="This page examines how wind turbines may cast a shadow in their immediate vicinity.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+, 
+shadows, shadow casting, windenergy, windturbines, wind mills">
+  <!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK='#0066CC' VLINK='#333333'>
+
+<FORM>
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD VALIGN="TOP">
+      <H2><MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="../../index.html#econ" TARGET="_top">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html" TARGET="_top">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="guide.html" TARGET="_top">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20"
+      ALIGN="RIGHT" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd"
+      USEMAP="#ictour2" ISMAP HSPACE="0"> <MAP NAME="www">
+    <AREA SHAPE="rect" COORDS="0,0,221,23" HREF="http://ele.aut.ac.ir/~wind/en/core.htm" TARGET="_top">
+</MAP><IMG SRC="../../../r/www.gif" WIDTH="221" HEIGHT="23" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0" BORDER="0" USEMAP="#www" ISMAP ALT="www.windpower.org"></H2>
+    </TD>
+  </TR>
+</TABLE><BR>
+<TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD COLSPAN="6" VALIGN="TOP">
+      <H2><IMG SRC="../../../r/t.gif" WIDTH="445" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0" BORDER="0"><BR>
+      <FONT FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine Shadow Calculator</FONT></H2>
+
+      <P><FONT COLOR="#ff0000" SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva"><NOSCRIPT>This
+      calculator requires a Netscape 3.01 or IE 4 or later browser
+      to work. If you are using Navigator 3.01 or later or Internet
+      Explorer 4 or later, and you see this message, you need to enable
+      JavaScript. In Netscape, choose Options | Network Preferences,
+      choose the Languages tab, and click Enable JavaScript. Then click
+      reload on your browser. In Internet Explorer, choose Edit | Preferences
+      | Java, and enable Java, select the Microsoft virtual machine,
+      and enable the &quot;Just in time compiler&quot;. Then click
+      reload on your browser. </NOSCRIPT>Do not operate the form until
+      this page and its programme have loaded completely. Otherwise
+      the program will complain about missing data, and you will have
+      to click <B>Reload</B>. </FONT><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">This
+      calculator lets you experiment with your local conditions to
+      determine the shape and size of the local area which may be affected
+      by shade (light flicker) from a wind turbine. For an actual project
+      you will probably want professional wind project software which
+      will help you with a lot of other aspects as well. (See the <A
+      HREF="http://ele.aut.ac.ir/~wind/en/links.htm#em">Links</A> section).<BR>
+      <IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE"
+      NATURALSIZEFLAG="0">After changing data, use the tab key, click
+      the Calculate button, or click anywhere on the page outside the
+      field you have updated to get the results in the right column.
+      To get a plot image, click on the Plot button. Click on the question
+      marks for help. (If a plot windows disappears, it is probably
+      hidden behind this window).</FONT>
+    </TD>
+     
+    <TD ROWSPAN="20" VALIGN="TOP" BGCOLOR="#0066cc">
+      <P><CENTER><IMG SRC="../../../r/t.gif" WIDTH="65" HEIGHT="10"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><BR>
+      <IMG SRC="../../../res/calc.gif" WIDTH="47" HEIGHT="312" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="3" BORDER="0"></CENTER></TD>
+  </TR> 
+  <TR>
+    <TD COLSPAN="4" VALIGN="TOP"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Location</FONT></B><BR>
+      <MAP NAME="d1x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#location" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d1x"
+      ISMAP>Select: <SELECT NAME="city" onChange="Ccity()">
+      <OPTION VALUE="0;0;0;0;0;0;0;">Select Location
+      <OPTION VALUE="52;21;0;4;54;0;15;">Amsterdam
+      <OPTION VALUE="61;13;0;149;53;1;135;">Anchorage
+      <OPTION VALUE="39;55;0;32;50;0;30;">Ankara
+      <OPTION VALUE="38;0;0;23;44;0;30;">Athens
+      <OPTION VALUE="39;55;0;116;25;0;120;">Beijing
+      <OPTION VALUE="52;31;0;13;24;0;15;">Berlin
+      <OPTION VALUE="18;56;0;72;51;0;82.5;">Bombay
+      <OPTION VALUE="42;29;0;71;5;1;75;">Boston
+      <OPTION VALUE="40;2;0;105;30;1;105;">Boulder
+      <OPTION VALUE="50;50;0;4;21;0;15;">Brussels
+      <OPTION VALUE="30;3;0;31;15;0;30;">Cairo
+      <OPTION VALUE="35;15;1;149;8;0;150;">Canberra
+      <OPTION VALUE="33;56;1;18;22;0;30;">Cape Town
+      <OPTION VALUE="41;50;0;87;45;1;90;">Chicago
+      <OPTION VALUE="55;41;0;12;35;0;15;(38,70,120,189,275,293,286,270,174,109,56,40,
+'Ellen Vaarby Laursen and John Cappelen: Observed Hours of Bright Sunshine in Denmark - with Climatological Standard Normals, 1961-90. Danish Meteorological Institute Technical Report 98-4, Copenhagen 1998.');[9.6,10.7,14.4,22,23,14.2,'European Wind Atlas: R&oslash;nne']">Christians&oslash; *)
+      <OPTION VALUE="55;19;0;15;11;0;15;(43,68,117,185,249,259,244,233,158,103,57,38,
+'Ellen Vaarby Laursen and John Cappelen: Observed Hours of Bright Sunshine in Denmark - with Climatological Standard Normals, 1961-90. Danish Meteorological Institute Technical Report 98-4, Copenhagen 1998.');[14.6,11.8,16,26.7,23.5,13.5,'European Wind Atlas: Kastrup']" SELECTED>Copenhagen *)
+      <OPTION VALUE="32;47;0;96;49;1;90;">Dallas
+      <OPTION VALUE="53;20;0;6;15;1;0;">Dublin
+      <OPTION VALUE="55;57;0;3;13;0;0;">Edinburgh
+      <OPTION VALUE="55;28;0;8;27;0;15;">Esbjerg
+      <OPTION VALUE="60;10;0;24;58;0;30;">Helsinki
+      <OPTION VALUE="22;15;0;114;10;0;120;">Hong Kong
+      <OPTION VALUE="21;19;0;157;52;1;150;">Honolulu
+      <OPTION VALUE="38;44;0;9;8;1;0;">Lisboa
+      <OPTION VALUE="51;30;0;0;10;0;0;">London
+      <OPTION VALUE="40;25;0;3;43;1;15;">Madrid
+      <OPTION VALUE="14;36;0;120;59;0;120;">Manila
+      <OPTION VALUE="37;50;1;145;0;0;150;">Melbourne
+      <OPTION VALUE="19;24;0;99;9;1;90;">Mexico City
+      <OPTION VALUE="45;30;0;73;36;1;75;">Montreal
+      <OPTION VALUE="55;45;0;37;35;0;45;">Moscow
+      <OPTION VALUE="28;37;0;77;13;0;82.5;">New Delhi
+      <OPTION VALUE="40;43;0;74;1;1;75;">New York
+      <OPTION VALUE="64;15;0;51;40;1;45;">Nuuk
+      <OPTION VALUE="59;56;0;10;45;0;15;">Oslo
+      <OPTION VALUE="45;25;0;75;42;1;75;">Ottawa
+      <OPTION VALUE="48;52;0;2;20;0;15;">Paris
+      <OPTION VALUE="31;56;1;115;50;0;120;">Perth
+      <OPTION VALUE="64;9;0;21;57;1;0;">Reykjavik
+      <OPTION VALUE="22;53;1;43;17;1;45;">Rio de Janeiro
+      <OPTION VALUE="41;53;0;12;30;0;15;">Rome
+      <OPTION VALUE="37;48;0;122;24;1;120;">San Francisco
+      <OPTION VALUE="47;21;0;122;12;1;120;">Seattle
+      <OPTION VALUE="31;14;0;121;30;0;120;">Shanghai
+      <OPTION VALUE="1;17;0;103;51;0;120;">Singapore
+      <OPTION VALUE="59;20;0;18;3;0;15;">Stockholm
+      <OPTION VALUE="62;1;0;6;46;1;0;">Thorshavn
+      <OPTION VALUE="76;34;0;68;47;1;45;">Thule
+      <OPTION VALUE="35;42;0;139;46;0;135;">Tokyo
+      <OPTION VALUE="56;27;0;9;25;0;15;(33,62,111,170,224,237,219,208,144,92,54,34,
+'Ellen Vaarby Laursen and John Cappelen: Observed Hours of Bright Sunshine in Denmark - with Climatological Standard Normals, 1961-90. Danish Meteorological Institute Technical Report 98-4, Copenhagen 1998.');[12.7,12,17.9,21.3,18.6,17.4,'European Wind Atlas: Karup']">Viborg *)
+      <OPTION VALUE="52;15;0;21;0;0;15;">Warsaw
+      <OPTION VALUE="41;17;1;174;47;0;180;">Wellington
+      <OPTION VALUE="47;23;0;8;33;0;15;">Zurich
+      <OPTION VALUE="0;0;0;0;0;0;0;">Other
+      </SELECT> or type<BR>
+      <INPUT NAME="latitude" TYPE="text" SIZE="3" MAXLENGTH="3" VALUE="55"
+      onChange="Clatitude()">&deg;<INPUT NAME="latitudeM" TYPE="text"
+      SIZE="2" MAXLENGTH="2" VALUE="41" onChange="ClatitudeM()">' latitude<INPUT
+      TYPE="radio" VALUE="north" NAME="ns" CHECKED="1" onClick="Cradio()">North
+      <INPUT TYPE="radio" VALUE="south" NAME="ns" onClick="Cradio()">South
+<BR>
+      <INPUT NAME="longitude" TYPE="text" SIZE="3" MAXLENGTH="3" VALUE="12"
+      onChange="Clongitude()">&deg;<INPUT NAME="longitudeM" TYPE="text"
+      SIZE="2" MAXLENGTH="2" VALUE="35" onChange="ClongitudeM()">'
+      longitude<INPUT TYPE="radio" VALUE="east" NAME="ew" onClick="Cradio()"
+      CHECKED="1">East <INPUT TYPE="radio" VALUE="west" NAME="ew" 
+      onClick="Cradio()">West<BR>
+      <B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Time
+      Zone</FONT></B><BR>
+      <MAP NAME="d2x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#timezone" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d2x"
+      ISMAP><INPUT NAME="stdMeridian" TYPE="text" SIZE="5" MAXLENGTH="5"
+      VALUE="15" onChange="CstdMeridian()">&deg; time zone meridian<INPUT
+      TYPE="radio" VALUE="east" NAME="ewt" CHECKED="1" onClick="Czeast()">East
+      <INPUT TYPE="radio" VALUE="west" NAME="ewt" onClick="Czwest()">West
+<BR>
+      or <B>GMT </B><SELECT NAME="pm" onChange="Cpm()">
+      <OPTION SELECTED>+
+      <OPTION>-
+      </SELECT><SELECT NAME="zone" onChange="Czone()">
+      <OPTION>0
+      <OPTION SELECTED>1
+      <OPTION>2
+      <OPTION>3
+      <OPTION>4
+      <OPTION>5
+      <OPTION>6
+      <OPTION>7
+      <OPTION>8
+      <OPTION>9
+      <OPTION>10
+      <OPTION>11
+      <OPTION>12
+      </SELECT><B>:</B><SELECT NAME="half" onChange="Chalf()">
+      <OPTION SELECTED>00
+      <OPTION>30
+      </SELECT><BR>
+      <IMG SRC="../../../r/t.gif" WIDTH="270" HEIGHT="1" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0" BORDER="0"> <B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Time</FONT></B><BR>
+      <MAP NAME="d3x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#time" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d3x"
+      ISMAP>day <INPUT NAME="date" TYPE="text" SIZE="2" MAXLENGTH="2"
+      onChange="Cdate()" VALUE="21"> month <INPUT NAME="month" TYPE="text"
+      SIZE="2" MAXLENGTH="2" onChange="Cmonth()" VALUE="6"><BR>
+      time <FONT SIZE="-1">(0:00-23:59)</FONT> <INPUT NAME="hours"
+      TYPE="text" SIZE="2" MAXLENGTH="2" onChange="Chours()" VALUE="14">
+      : <INPUT NAME="minutes" TYPE="text" SIZE="2" MAXLENGTH="2" onChange="Cminutes()"
+      VALUE="00"> <INPUT TYPE="checkbox" NAME="daylight" VALUE="checkbox"
+      onClick="Cdaylight()"><FONT SIZE="-1">Daylight saving time<BR>
+      </FONT><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Turbine</FONT></B><BR>
+      <MAP NAME="d4x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#turbine" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d4x"
+      ISMAP> <INPUT NAME="height" TYPE="text" SIZE="4" VALUE="50" 
+      onChange="Cheight()">m hub height, <INPUT NAME="diameter" TYPE="text"
+      SIZE="4" VALUE="43" onChange="Cdiameter()">m rotor diameter</TD>
+     
+    <TD WIDTH="34" VALIGN="TOP"><IMG SRC="../../../r/t.gif" WIDTH="20"
+      HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"></TD> 
+    <TD WIDTH="169" VALIGN="TOP"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Results
+      this Day</FONT></B><BR>
+      <MAP NAME="d5x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#sunrise" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d5x"
+      ISMAP>Sunrise <INPUT NAME="ta" TYPE="text" SIZE="2" onChange="Cb()">:<INPUT
+      NAME="tam" TYPE="text" SIZE="2" onChange="Cb()"><BR>
+      <MAP NAME="d6x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#noon" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d6x"
+      ISMAP>Noon <INPUT NAME="t0" TYPE="text" SIZE="2" onChange="Cb()">:<INPUT
+      NAME="t0m" TYPE="text" SIZE="2" onChange="Cb()"><BR>
+      <MAP NAME="d7x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#sunset" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d7x"
+      ISMAP>Sunset <INPUT NAME="tu" TYPE="text" SIZE="2" onChange="Cb()">:<INPUT
+      NAME="tum" TYPE="text" SIZE="2" onChange="Cb()"><BR>
+      <MAP NAME="d8x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#declination" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d8x"
+      ISMAP>Declination <INPUT NAME="d" TYPE="text" SIZE="6" MAXLENGTH="6"
+      onChange="Cb()">&deg;<BR>
+      Sunrise/sunset duration<BR>
+      <MAP NAME="d9x">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#lasts" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#d9x"
+      ISMAP><INPUT NAME="min" TYPE="text" SIZE="2" onChange="Cb()">min.
+      <INPUT NAME="sec" TYPE="text" SIZE="2" onChange="Cb()">sec.<BR>
+      <IMG SRC="../../../r/t.gif" WIDTH="155" HEIGHT="1" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0" BORDER="0"><BR>
+      <B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Results
+      this Minute</FONT></B><BR>
+      <MAP NAME="dax">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#azimuth" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#dax"
+      ISMAP>Solar azimuth <INPUT NAME="g" TYPE="text" SIZE="6" MAXLENGTH="6"
+      onChange="Cb()">&deg;<BR>
+      <MAP NAME="dbx">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#altitude" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#dbx"
+      ISMAP>Solar altitude <INPUT NAME="h" TYPE="text" SIZE="6" MAXLENGTH="6"
+      onChange="Cb()">&deg;<BR>
+      Direction from the sun<BR>
+      <INPUT NAME="x" TYPE="text" SIZE="6" onChange="Cb()"><INPUT 
+      NAME="y" TYPE="text" SIZE="6" onChange="Cb()"><INPUT NAME="z"
+      TYPE="text" SIZE="6" onChange="Cb()"><BR>
+      (East, North, Up coordinates)</TD>
+  </TR> 
+  <TR>
+    <TD COLSPAN="6" VALIGN="TOP"><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Shadow
+      Plot</FONT></B><BR>
+      <MAP NAME="dcx">
+    <AREA SHAPE="rect" COORDS="0,0,18,27" HREF="guide.html#plot" TARGET="_blank">
+</MAP><IMG SRC="../../../res/kort.gif" WIDTH="18" HEIGHT="27"
+      ALIGN="MIDDLE" NATURALSIZEFLAG="0" BORDER="0" ALT="?" USEMAP="#dcx"
+      ISMAP>this...<INPUT TYPE="radio" VALUE="minute" NAME="per">minute
+      <INPUT TYPE="radio" VALUE="hour" NAME="per">hour <INPUT TYPE="radio"
+      VALUE="day" NAME="per" CHECKED="1">day <INPUT TYPE="radio" VALUE="month"
+      NAME="per">month <INPUT TYPE="radio" VALUE="year" NAME="per">year,
+      step <SELECT NAME="stp">
+      <OPTION VALUE="1">1
+      <OPTION VALUE="2">2
+      <OPTION VALUE="3">3
+      <OPTION VALUE="4" SELECTED>4
+      <OPTION VALUE="5">5
+      <OPTION VALUE="6">6
+      <OPTION VALUE="7">7
+      <OPTION VALUE="8">8
+      <OPTION VALUE="9">9
+      <OPTION VALUE="10">10
+      <OPTION VALUE="11">11
+      <OPTION VALUE="12">12
+      <OPTION VALUE="13">13
+      <OPTION VALUE="14">14
+      <OPTION VALUE="15">15
+      <OPTION VALUE="20">20
+      <OPTION VALUE="30">30
+      <OPTION VALUE="40">40
+      <OPTION VALUE="60">60
+      </SELECT> minute(s)<BR>
+      Plot area height <INPUT NAME="wh" TYPE="text" SIZE="4" MAXLENGTH="4"
+      VALUE="450" onChange="Cwh()"> width <INPUT NAME="ww" TYPE="text"
+      SIZE="4" MAXLENGTH="4" VALUE="720" onChange="Cww()"> pixels,
+      resolution = <INPUT NAME="m" TYPE="text" SIZE="3" MAXLENGTH="3"
+      VALUE="15">m per <SELECT NAME="res">
+      <OPTION VALUE="3">3
+      <OPTION VALUE="4">4
+      <OPTION VALUE="5">5
+      <OPTION VALUE="6">6
+      <OPTION VALUE="7">7
+      <OPTION VALUE="8">8
+      <OPTION VALUE="9">9
+      <OPTION VALUE="10">10
+      <OPTION VALUE="11">11
+      <OPTION VALUE="12">12
+      <OPTION VALUE="13">13
+      <OPTION VALUE="14">14
+      <OPTION VALUE="15" SELECTED>15
+      <OPTION VALUE="16">16
+      <OPTION VALUE="17">17
+      <OPTION VALUE="18">18
+      <OPTION VALUE="19">19
+      <OPTION VALUE="20">20
+      <OPTION VALUE="21">21
+      <OPTION VALUE="22">22
+      <OPTION VALUE="23">23
+      <OPTION VALUE="24">24
+      <OPTION VALUE="25">25
+      </SELECT> pixels<BR>
+      Rotor direction (azimuth) <INPUT TYPE="radio" VALUE="random"
+      NAME="dir" CHECKED="1" onClick="Crose()">random <INPUT TYPE="radio"
+      VALUE="worst" NAME="dir" onClick="Crose()">worst case (Darrieus)<BR>
+      <INPUT TYPE="radio" VALUE="facing" NAME="dir" onClick="Crose()">facing
+      azimuth <INPUT NAME="faceR" TYPE="text" SIZE="5" onChange="CfaceR()"
+      VALUE="-45">&deg; = <SELECT NAME="faceM" onChange="CfaceM()">
+      <OPTION VALUE="0">N/S
+      <OPTION VALUE="22.5">NNW/SSE
+      <OPTION VALUE="45">NW/SE
+      <OPTION VALUE="67.5">WNW/ESE
+      <OPTION VALUE="90">W/E
+      <OPTION VALUE="-67.5">WSW/ENE
+      <OPTION VALUE="-45" SELECTED>SW/NE
+      <OPTION VALUE="-22.5">SSW/NNE
+      <OPTION>Other
+      </SELECT> <INPUT TYPE="radio" VALUE="rose" NAME="dir" onClick="Crose()">use
+      wind rose table below<BR>
+      <FONT SIZE="-1">Turbine running <INPUT NAME="pct" TYPE="text"
+      SIZE="3" MAXLENGTH="3" VALUE="75" onChange="Cpct()">% of the
+      daytime. Max. distance <INPUT NAME="dist" TYPE="text" SIZE="4"
+      MAXLENGTH="4" onChange="Cdist()" VALUE="1000"> m<BR>
+      Sunshine <INPUT NAME="sun" TYPE="text" SIZE="3" MAXLENGTH="3"
+      VALUE="40" onChange="Csun()">% of the time <B>OR</B> check here
+      <INPUT TYPE="checkbox" NAME="solar" VALUE="solar" onClick="Csolar()">
+      to use monthly sunshine hours from table below.</FONT><BR>
+      <INPUT TYPE="checkbox" NAME="readout" VALUE="readout"> <FONT
+       SIZE="-1">Include mouse sensitive shadow duration readout (only
+      useful if used with an I.E. 4 browser)</FONT><BR>
+      <INPUT NAME="pl" TYPE="button" VALUE="Plot" onClick="preparePlot()"><INPUT
+NAME="calculate" TYPE="button" VALUE="Calculate" onClick="run(1)"><BR>
+      <FONT SIZE="-1">*)= Cities marked with an asterisk in the city
+      popup menu include sunshine and wind rose data for the tables
+      below.</FONT></TD>
+  </TR> 
+  <TR>
+    <TD COLSPAN="4" VALIGN="BOTTOM">
+      <P>&nbsp;</P>
+
+      <P><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Bright
+      Sunshine Table</FONT></B>
+    </TD>
+     
+    <TD>&nbsp;</TD> 
+    <TD VALIGN="BOTTOM">
+      <P><IMG SRC="../../../r/t.gif" WIDTH="70" HEIGHT="1" ALIGN="BOTTOM"
+      NATURALSIZEFLAG="0" BORDER="0"></P>
+
+      <P><B><FONT COLOR="#0066cc" FACE="gillsans, frutiger, arial, helvetica, geneva">Wind
+      Rose Table</FONT></B>
+    </TD>
+  </TR> 
+  <TR>
+    <TD WIDTH="70"><IMG SRC="../../../r/t.gif" WIDTH="70" HEIGHT="1"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><BR>
+      Month</TD> 
+    <TD WIDTH="50"><IMG SRC="../../../r/t.gif" WIDTH="50" HEIGHT="1"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><BR>
+      Daytime<BR>
+      Hours</TD> 
+    <TD WIDTH="50"><IMG SRC="../../../r/t.gif" WIDTH="50" HEIGHT="1"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><BR>
+      Bright<BR>
+      Sunshine<BR>
+      Hours</TD> 
+    <TD WIDTH="50"><IMG SRC="../../../r/t.gif" WIDTH="50" HEIGHT="1"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"><BR>
+      Bright<BR>
+      Sunshine<BR>
+      per cent</TD> 
+    <TD>&nbsp;</TD> 
+    <TD VALIGN="BOTTOM">using <SELECT NAME="compass" onChange="Ccompass()">
+      <OPTION VALUE="4">8
+      <OPTION VALUE="6" SELECTED>12
+      <OPTION VALUE="8">16
+      </SELECT> directions<BR>
+      <FONT SIZE="-1">wind rose sector (not azimuth) %</FONT></TD>
+  </TR> 
+  <TR>
+    <TD>January</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s1" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u1" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p1" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d1" TYPE="text" SIZE="15" MAXLENGTH="15" VALUE="N-S 180/0"
+      onChange="Cno()">&deg; <INPUT NAME="b1" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(1)"></TD>
+  </TR> 
+  <TR>
+    <TD>February</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s2" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u2" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p2" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d2" TYPE="text" SIZE="15" MAXLENGTH="15" onChange="Cno()"
+      VALUE="SSW-NNE 330/150">&deg; <INPUT NAME="b2" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(2)"></TD>
+  </TR> 
+  <TR>
+    <TD>March</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s3" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u3" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p3" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d3" TYPE="text" SIZE="15" MAXLENGTH="15" onChange="Cno()"
+      VALUE="ESE-WNW 300/120">&deg; <INPUT NAME="b3" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(3)"></TD>
+  </TR> 
+  <TR>
+    <TD>April</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s4" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u4" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p4" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d4" TYPE="text" SIZE="15" MAXLENGTH="15" VALUE="E-W 270/90"
+      onChange="Cno()">&deg; <INPUT NAME="b4" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(4)"></TD>
+  </TR> 
+  <TR>
+    <TD>May</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s5" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u5" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p5" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d5" TYPE="text" SIZE="15" MAXLENGTH="15" onChange="Cno()"
+      VALUE="ENE/WSW 240/60">&deg; <INPUT NAME="b5" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(5)"></TD>
+  </TR> 
+  <TR>
+    <TD>June</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s6" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u6" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p6" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d6" TYPE="text" SIZE="15" MAXLENGTH="15" onChange="Cno()"
+      VALUE="NNE-SSW 210/30">&deg; <INPUT NAME="b6" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(6)"></TD>
+  </TR> 
+  <TR>
+    <TD>July</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s7" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u7" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p7" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d7" TYPE="text" SIZE="15" MAXLENGTH="15" VALUE="not used"
+      onChange="Cno()">&deg; <INPUT NAME="b7" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(7)"></TD>
+  </TR> 
+  <TR>
+    <TD>August</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s8" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u8" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p8" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD><INPUT NAME="d8" TYPE="text" SIZE="15" MAXLENGTH="15" VALUE="not used"
+      onChange="Cno()">&deg; <INPUT NAME="b8" TYPE="text" SIZE="5"
+      MAXLENGTH="5" VALUE="0" onChange="Cbs(8)"></TD>
+  </TR> 
+  <TR>
+    <TD>September</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s9" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u9" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p9" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD>Total ... ... ...<INPUT NAME="b9" TYPE="text" SIZE="9" MAXLENGTH="9"
+      VALUE="0" onChange="Cno()"></TD>
+  </TR> 
+  <TR>
+    <TD>October</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s10" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u10" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p10" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD>Total must be 100%</TD>
+  </TR> 
+  <TR>
+    <TD>November</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s11" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u11" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p11" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD>&nbsp;</TD>
+  </TR> 
+  <TR>
+    <TD>December</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s12" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u12" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p12" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD>&nbsp;</TD>
+  </TR> 
+  <TR>
+    <TD>Year Total</TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="s13" TYPE="text" SIZE="5" onChange="Cs()"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="u13" TYPE="text" SIZE="5" onChange="Cu()"
+      VALUE="0"></FONT></TD> 
+    <TD><FONT SIZE="-1"><INPUT NAME="p13" TYPE="text" SIZE="5" onChange="Cs()"
+      VALUE="0"></FONT></TD> 
+    <TD>&nbsp;</TD> 
+    <TD>&nbsp;</TD>
+  </TR> 
+  <TR>
+    <TD COLSPAN="4"><FONT SIZE="-1">Daytime hours are computed automatically
+      by this programme.<BR>
+      Source for bright sunshine hours:<BR>
+      <TEXTAREA NAME="source" ROWS="7" COLS="38" WRAP="PHYSICAL" onChange="Csource()"
+></TEXTAREA></FONT></TD>
+    <TD>&nbsp;</TD> 
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD COLSPAN="6" VALIGN="TOP" ALIGN="CENTER">
+      <P><BR>
+      <MAP NAME="ictour2">
+    <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="../../index.html#econ" TARGET="_top">
+    <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html" TARGET="_top">
+    <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="guide.html" TARGET="_top">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20"
+      ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd"
+      USEMAP="#ictour2" ISMAP HSPACE="0"></P>
+
+      <P><FONT SIZE="-1" FACE="gillsans, frutiger, arial, helvetica, geneva">|
+      <A HREF="guide.html" TARGET="_top">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm"
+      TARGET="_top">Home</A> | <A HREF="../../index.html#econ" TARGET="_top">Forward</A>
+      | <BR>
+      <A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm" TARGET="_top">&copy; Copyright
+      1998 Danish Wind Turbine Manufacturers Association</A><BR>
+      Updated 14 August 2000<BR>
+      http://www.windpower.org/tour/env/shadow/shadowc.htm</FONT>
+    </TD>
+  </TR> 
+</TABLE></P>
+
+<P><IMG SRC="../../../res/bluepix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0"><IMG SRC="../../../r/t.gif" WIDTH="1"
+HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG 
+SRC="../../../res/green.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0"><IMG SRC="../../../res/redpix.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG 
+SRC="../../../res/blpix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0"><IMG SRC="../../../res/whpix.gif"
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="3" BORDER="0"><IMG 
+SRC="../../../res/ypix.gif" WIDTH="1" HEIGHT="1" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0"><IMG SRC="../../../res/x.gif" 
+WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" NATURALSIZEFLAG="0" BORDER="0"></P>
+
+<P><!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="../../../js/s.js">
+<!--
+alert("This programme requires an Internet Explorer 4, or a Netscape 3 or 4 browser.");
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</FORM>
+
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/shadow/shadowc.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:16 GMT -->
+</HTML>

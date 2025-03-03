@@ -1,0 +1,183 @@
+<HTML>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/shadow/shadowr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:12 GMT -->
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Mac">
+ <TITLE>Refining Shadow Calculations for Wind Turbines</TITLE>
+ <!--NOEDIT-->
+<META NAME="Resource-Type" CONTENT="document">
+<META NAME="Distribution" CONTENT="global"><META NAME="Robots" CONTENT="index,follow">
+<META NAME="Content-Language" CONTENT="en-UK">
+
+<META NAME="Description" CONTENT="This page tells you how shadows calculations can be refined using sun and wind statistics.">
+<META NAME="Keywords" CONTENT="wind energy, wind power, windpower, wind turbines,
+windmills, renewable energy, danish wind turbine manufacturers association, denmark,
+, shadow casting, windenergy, windturbines, wind mills">
+<!--/NOEDIT-->
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK='#0066CC' VLINK='#333333' BACKGROUND="../../../res/bg.gif">
+
+<P><TABLE WIDTH="510" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD COLSPAN="3" VALIGN="TOP"><H2><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="shadow2.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html">
+ <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="shadow.html">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN=
+"RIGHT" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" USEMAP=
+"#ictour2" ISMAP> <MAP NAME="wt">
+ <AREA SHAPE="rect" COORDS="0,0,236,40" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../../r/wt.gif" WIDTH="236" HEIGHT="40" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" ALT="www.windpower.org" BORDER="0" USEMAP="#wt" ISMAP></H2>
+</TD></TR>
+<TR>
+<TD WIDTH="120" ROWSPAN="2" VALIGN="TOP"><IMG SRC="../../../r/t.gif" WIDTH="120" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"></TD>
+<TD WIDTH="20" ROWSPAN="3" VALIGN="TOP"><IMG SRC="../../../r/t.gif" WIDTH="20" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0"></TD>
+<TD WIDTH="370" ROWSPAN="2" VALIGN="TOP"><H2><IMG SRC="../../../r/t.gif" WIDTH="370" HEIGHT="1" ALIGN="MIDDLE"
+NATURALSIZEFLAG="0"><BR>
+<FONT FACE='gillsans, frutiger, arial, helvetica, geneva'>Refining Shadow
+Calculations for Wind Turbines</FONT></H2>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Random
+Rotor Direction (Random Azimuth)</B></FONT><BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="62" ALIGN="RIGHT" NATURALSIZEFLAG=
+"0" ALT="Two rotor shadows" BORDER="0">It is very unlikely that the wind
+and thus the rotor will track the sun in practice. We may therefore get
+a more realistic result if we <IMG SRC="../../../res/twoshad.gif" ALIGN=
+"RIGHT" BORDER="0" ALT="Two shadows" WIDTH="128" HEIGHT="54" NATURALSIZEFLAG=
+"3">modify our calculations by assuming that the rotor can assume any position
+at any time. In the small picture to the far right you can see a situation
+where the rotor is directly facing the sun. The tiny white dot near the
+bottom right is the centre of the wind turbine tower.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">Now, let us assume that we yaw the rotor out of its position by one
+degree, take a snapshot of the shadow image, then yaw it by another degree,
+take another snapshot etc., until we have done a full 360 degree turn. Then
+we overlay all our 360 snapshots, and what we end up with will look similar
+to the small image to the left: The centre will get the most of the shadow,
+but as we move towards the outer edge (where the vertical edges of the rotor
+disc cast their shadows) the overall shadow intensity will decrease.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">Shadow casting is on average reduced to 63% of the worst case results,
+if you assume a random rotor direction. Ideally, we should have a <A HREF=
+"../../wres/rose.html">wind rose</A>, (preferably hourly for each day or
+month) to do an exact calculation.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Fixed
+Rotor Direction (Fixed Azimuth)</B></FONT><BR>
+<IMG SRC="../../../res/fixedyaw.gif" ALIGN="LEFT" ALT="Fixed azimuth image"
+BORDER="0" WIDTH="125" HEIGHT="116" NATURALSIZEFLAG="3"><IMG SRC="../../../r/t.gif"
+WIDTH="8" HEIGHT="124" ALIGN="LEFT" NATURALSIZEFLAG="0" ALT="Two rotor shadows"
+BORDER="0">In practice the wind turbine rotor will follow the wind direction
+(if the wind speed is above the <A HREF="../../wres/powdensi.html#anchor577575">cut
+in speed</A>). This image shows the shape of an area (in red) which gives
+10 hours or more of shadows per year at 55&deg; Northern latitude with the
+rotor <A HREF="../../wtrb/comp/index.html">yaw</A> (<A HREF="guide.html#azimuth">azimuth</A>)
+fixed at an angle of -45 degrees (i.e. with the wind permanently coming
+from the Southwest or Northeast). As you can see, there will be almost no
+shadows at an angle of +45 degrees, i.e. in the direction parallel to the
+rotor plane.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">Shadow casting is typically reduced to around 62% of the worst case
+results, if we assume a fixed rotor direction.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Actual
+Rotor Direction (Wind Rose)</B></FONT><BR>
+Usually we will already have a wind rose with a frequency distribution of
+the wind in the different directions of the compass when we are planning
+a wind turbine site. Using that information, we may calculate a more exact
+shadow picture. In the case of our test example, Copenhagen, shadows are
+reduced to some 64 per cent of the comparable worst case value.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Turbine
+Operating Hours</B></FONT><BR>
+The rotor will not be running all the time, so we may multiply the number
+of minutes of shadow flicker by a factor of typically 0.75, depending on
+the local wind climate, (and ideally using the correct factor for daytime
+during each month).</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Actual
+Sunshine Hours</B></FONT><BR>
+When studying shadows, we should only count the fraction of the time when
+the sun is actually shining brightly, ideally using the correct fraction
+for each hour of the day during the year. In 1853 the first reliable sunshine
+recording device was invented (and improved in 1879), which means that in
+many parts of the world the meteorological institutes have very accurate
+long term statistics on the number of hours of bright sunshine during the
+year.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">The number of bright sunshine hours varies with the geographical location
+and the season (summer or winter). We have included data for three Danish
+sites (Christians&oslash;, Copenhagen, and Viborg) where the number of sunshine
+hours vary from 44 to 40, and 36 per cent of the time.</P>
+
+<P><FONT COLOR="#0066CC" FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=+1><B>Combining
+Turbine operating hours, Actual Rotor Direction, and Actual Sunshine Hours</B></FONT><BR>
+If we use both turbine operating hours, the actual rotor direction, and
+the actual bright sunshine hours we get a result (in the case of Denmark)
+which is some 18 per cent of the worst case assumption, using 75% operating
+hours in both cases. (The percentages given above are the results of simulations
+for Copenhagen on a 720 by 720 metre square with a turbine in the centre
+with 43 m rotor diameter and 50 m hub height).<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">The two images below compare a worst case simulation (with 75% operating
+hours) with an actual simulation for Copenhagen (also 75% operating hours)
+using both sunshine and wind statistics. The red area is the zone with 30
+hours of shadow or more per year. Each map represents 720 by 720 metres.<BR>
+<IMG SRC="../../../r/t.gif" WIDTH="8" HEIGHT="1" ALIGN="MIDDLE" NATURALSIZEFLAG=
+"0">The important conclusion of this simulation is that actual sunshine
+hours play a very important role in diminishing the amount of shadows north
+of the turbine (in the Northern hemisphere). The reason why this is important
+is that there are very few hours of sunshine when the sun is low in the
+sky to the south during winter.</P>
+
+<P><IMG SRC="../../../res/worst30h.gif" ALIGN="LEFT" BORDER="0" ALT="Worst 30 hour zone"
+WIDTH="180" HEIGHT="188" NATURALSIZEFLAG="3"><IMG SRC="../../../res/all30h.gif"
+WIDTH="180" HEIGHT="188" ALIGN="RIGHT" NATURALSIZEFLAG="3" BORDER="0" ALT=
+"Actual shadow simulation"></TD></TR>
+<TR></TR>
+<TR>
+<TD VALIGN="BOTTOM" WIDTH="120"><MAP NAME="ihome">
+ <AREA SHAPE="rect" COORDS="0,0,120,20" HREF="http://ele.aut.ac.ir/~wind/en/core.htm">
+</MAP><IMG SRC="../../../r/ihome.gif" WIDTH="120" HEIGHT="20" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0" ALT="Home" USEMAP="#ihome" ISMAP></TD>
+<TD VALIGN="TOP" WIDTH="370"><P ALIGN=CENTER>&nbsp;</P>
+
+<P ALIGN=CENTER><MAP NAME="ictour2">
+ <AREA SHAPE="rect" COORDS="140,0,159,19" HREF="shadow2.html">
+ <AREA SHAPE="rect" COORDS="20,0,139,19" HREF="../../index.html">
+ <AREA SHAPE="rect" COORDS="0,0,19,19" HREF="shadow.html">
+</MAP><IMG SRC="../../../r/itour2.gif" WIDTH="160" HEIGHT="20" ALIGN=
+"TOP" NATURALSIZEFLAG="3" BORDER="0" ALT="Back, Guided Tour, Fwd" USEMAP=
+"#ictour2" ISMAP></P>
+
+<P ALIGN=CENTER><FONT FACE='gillsans, frutiger, arial, helvetica, geneva' SIZE=-1>|
+<A HREF="shadow.html">Back</A> | <A HREF="http://ele.aut.ac.ir/~wind/en/core.htm">Home</A> | <A
+HREF="shadow2.html">Forward</A> | <BR>
+<A HREF="http://ele.aut.ac.ir/~wind/en/copyrght.htm">&copy; Copyright 1998 Soren Krohn. All rights reserved.</A><BR>
+Updated 26 September 2000<BR>
+http://www.windpower.org/tour/env/shadow/shadowr.htm</FONT></TD></TR>
+</TABLE>
+</P>
+
+<P><MAP NAME="seasmov">
+ <AREA SHAPE="rect" COORDS="0,0,1,1" HREF="javascript:re()">
+</MAP><IMG SRC="../../../res/seasmov.gif" WIDTH="1" HEIGHT="1" ALIGN="TOP"
+NATURALSIZEFLAG="0" BORDER="0" USEMAP="#seasmov" ISMAP NAME="seas"><IMG SRC=
+"../../../res/shad1800.gif" WIDTH="1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG=
+"0" BORDER="0"><IMG SRC="../../../res/sh435363.gif" WIDTH="1" HEIGHT="1"
+ALIGN="TOP" NATURALSIZEFLAG="0" BORDER="0"><IMG SRC="../../../res/towers.gif"
+WIDTH="1" HEIGHT="1" ALIGN="TOP" NATURALSIZEFLAG="0" BORDER="0">
+<!--NOEDIT-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window!=top)top.location.href=location.href;
+//-->
+</SCRIPT>
+<!--/NOEDIT-->
+</BODY>
+
+<!-- Mirrored from ele.aut.ac.ir/~wind/en/tour/env/shadow/shadowr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Mar 2024 02:43:14 GMT -->
+</HTML>
